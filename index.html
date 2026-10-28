@@ -163,6 +163,7 @@ body.loading{overflow:hidden}
 @media (min-width:1181px){.hero-txt{justify-content:flex-start;padding-top:56px}}
 .hero-logo--h{width:clamp(380px,30vw,460px);margin-bottom:46px}
 .hero-logo--v{display:none}
+.mob-only{display:none}
 .hero h1 em{font-style:normal;color:var(--naranja-prof)}
 .hero .lead{margin-bottom:42px}
 .hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:30px}
@@ -407,8 +408,10 @@ body.loading{overflow:hidden}
 @media (max-width:1180px){
   .hero-logo--h{display:none}
   .hero-logo--v{display:block}
-  .nav{position:fixed;inset:0;background:var(--marfil);flex-direction:column;justify-content:center;align-items:flex-start;gap:6px;padding:100px var(--gutter) 40px;transform:translateX(100%);transition:transform .5s var(--ease);overflow-y:auto}
+  .hdr{backdrop-filter:none;background:var(--marfil)}
+  .nav{position:fixed;inset:0;height:100vh;height:100dvh;background:var(--marfil);flex-direction:column;justify-content:center;align-items:flex-start;gap:6px;padding:100px var(--gutter) 40px;transform:translateX(100%);transition:transform .5s var(--ease);overflow-y:auto}
   .menu-open .nav{transform:none}
+  .menu-open{overflow:hidden}
   .nav > a,.nav .has-dd > button.dd{font-family:var(--f-titulo);font-size:30px;text-transform:none;letter-spacing:.3px;font-weight:400;padding:10px 0}
   .nav a::after,.nav button.dd::after{display:none}
   .dd-menu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:none;padding:0 0 10px 16px;min-width:0}
@@ -448,6 +451,13 @@ body.loading{overflow:hidden}
   .info-line--4{grid-template-columns:1fr}
   .split-media::after{display:none}
   .ftr-grid{grid-template-columns:1fr}
+  .mob-only{display:list-item}
+  /* Logotipo de la portada centrado */
+  .hero-logo--v{margin-left:auto;margin-right:auto}
+  /* Menos espacio entre el encabezado de cada página y la primera sección */
+  .page-hero + .sec{padding-top:24px}
+  .page-hero .ph-txt{padding-bottom:16px}
+  .dd-menu a{white-space:normal}
   .faq .ans{padding-right:0}
   .cookies{left:12px;right:12px;bottom:12px;max-width:none}
   .wa{right:16px;bottom:16px;width:56px;height:56px}
@@ -1149,7 +1159,7 @@ body.loading{overflow:hidden}
       </div>
       <div>
         <h4>Sígueme</h4>
-        <ul><li><a href="https://www.instagram.com/dr.nestor_cirugiaplastica/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/profile.php?id=61572596087909" target="_blank" rel="noopener">Facebook</a></li><li><a href="#/doctor">Sobre mí</a></li><li><a href="#/preguntas">Preguntas frecuentes</a></li></ul>
+        <ul><li><a href="https://www.instagram.com/dr.nestor_cirugiaplastica/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/profile.php?id=61572596087909" target="_blank" rel="noopener">Facebook</a></li><li><a href="#/doctor">Sobre mí</a></li><li><a href="#/preguntas">Preguntas frecuentes</a></li><li class="mob-only"><a href="https://maps.app.goo.gl/Kqccn2uwh1JV8Kvp6" target="_blank" rel="noopener">Cómo llegar</a></li></ul>
       </div>
     </div>
     <div class="ftr-legal">
@@ -1273,10 +1283,15 @@ window.addEventListener('hashchange', route);
 /* ---------- Encabezado y menú móvil ---------- */
 const hdr = document.getElementById('hdr');
 addEventListener('scroll', () => hdr.classList.toggle('solid', scrollY > 40), { passive: true });
-document.getElementById('burger').addEventListener('click', e => {
+const burger = document.getElementById('burger');
+burger.addEventListener('click', () => {
   const open = document.body.classList.toggle('menu-open');
-  e.currentTarget.setAttribute('aria-expanded', open);
+  burger.setAttribute('aria-expanded', open);
 });
+document.querySelectorAll('#nav a').forEach(a => a.addEventListener('click', () => {
+  document.body.classList.remove('menu-open');
+  burger.setAttribute('aria-expanded', 'false');
+}));
 
 /* ---------- Reseñas rotativas ---------- */
 (function(){
