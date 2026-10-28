@@ -330,6 +330,10 @@ body.loading{overflow:hidden}
 .tl small{font-family:var(--f-etiqueta);font-size:11.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--naranja-prof)}
 .tl h3{font-size:26px;margin:6px 0 8px}
 .tl p{color:var(--piedra);max-width:640px}
+/* Formas de pago dentro de "¿Qué incluye tu atención?" */
+.pay{margin-top:34px}
+.pay small{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--naranja-prof);display:block;margin-bottom:10px}
+.pay p{font-family:var(--f-titulo);font-size:21px;line-height:1.4;margin:0;max-width:460px}
 .disclaimer{font-size:14.5px;color:var(--piedra);border-left:2px solid var(--linea);padding-left:18px;margin-top:40px;max-width:700px}
 
 /* Preguntas frecuentes (acordeón) */
@@ -346,6 +350,8 @@ body.loading{overflow:hidden}
 
 /* Contacto y mapa */
 .info-line{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--linea)}
+.info-line--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.info-line--4 p{font-size:20px}
 .info-line > div{padding:34px 30px 34px 0}
 .info-line > div + div{padding-left:30px;border-left:1px solid var(--linea)}
 .info-line small{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--naranja-prof);display:block;margin-bottom:10px}
@@ -439,6 +445,7 @@ body.loading{overflow:hidden}
   .fact + .fact{padding-left:0;border-left:0;border-top:1px solid var(--linea)}
   .steps,.cols,.cols.two,.info-line,.form{grid-template-columns:1fr}
   .info-line > div + div{padding-left:0;border-left:0;border-top:1px solid var(--linea)}
+  .info-line--4{grid-template-columns:1fr}
   .split-media::after{display:none}
   .ftr-grid{grid-template-columns:1fr}
   .faq .ans{padding-right:0}
@@ -646,10 +653,11 @@ body.loading{overflow:hidden}
 
   <!-- Dirección y horario -->
   <section class="wrap" style="padding-bottom:var(--sec)">
-    <div class="info-line reveal">
+    <div class="info-line info-line--4 reveal">
       <div><small>Dirección</small><p>Calle del Prado 208, Jardines del Moral, León, Gto.</p></div>
       <div><small>Horario de consulta</small><p>Lunes a sábado<br>9:30 a 12:30 · con cita</p></div>
       <div><small>Cómo llegar</small><p><a class="link" href="https://maps.app.goo.gl/Kqccn2uwh1JV8Kvp6" target="_blank" rel="noopener">Abrir en Google Maps</a></p></div>
+      <div><small>Formas de pago</small><p>Efectivo, transferencia y tarjeta a meses sin intereses</p></div>
     </div>
   </section>
 </section>
@@ -765,6 +773,7 @@ body.loading{overflow:hidden}
           <li>Estancia de 24 horas en mommy makeover.</li>
           <li>Todas tus consultas de seguimiento hasta el alta.</li>
         </ul>
+        <div class="pay reveal d3"><small>Formas de pago</small><p>Efectivo, transferencia y tarjeta de crédito a meses sin intereses.</p></div>
       </div>
       <div>
         <div class="kicker reveal">El día del procedimiento</div>
@@ -857,6 +866,7 @@ body.loading{overflow:hidden}
           <li>Faja o brasier postoperatorio.</li>
           <li>Consultas de seguimiento hasta tu alta.</li>
         </ul>
+        <div class="pay reveal d3"><small>Formas de pago</small><p>Efectivo, transferencia y tarjeta de crédito a meses sin intereses.</p></div>
       </div>
       <div>
         <div class="kicker reveal">El día del procedimiento</div>
@@ -947,6 +957,7 @@ body.loading{overflow:hidden}
           <li>Indicaciones de cuidado por escrito.</li>
           <li>Revisión de seguimiento para valorar el resultado.</li>
         </ul>
+        <div class="pay reveal d3"><small>Formas de pago</small><p>Efectivo, transferencia y tarjeta de crédito a meses sin intereses.</p></div>
       </div>
       <div>
         <div class="kicker reveal">El día de tu aplicación</div>
@@ -1007,7 +1018,7 @@ body.loading{overflow:hidden}
         <div class="faq">
           <details><summary>¿Qué es la valoración y cómo la agendo?</summary><div class="ans">Es una consulta conmigo para revisar tu caso, resolver tus dudas y definir un plan. Puedes agendarla por WhatsApp o dejando tus datos en el formulario.</div></details>
           <details><summary>¿Necesito estudios previos?</summary><div class="ans">Para cirugía, sí. Te indico los estudios de laboratorio necesarios para operar con seguridad.</div></details>
-          <details><summary>¿Cuáles son las formas de pago?</summary><div class="ans">Efectivo y transferencia electrónica. Pregúntame por las opciones disponibles al agendar.</div></details>
+          <details><summary>¿Cuáles son las formas de pago?</summary><div class="ans">Acepto efectivo, transferencia electrónica y tarjeta de crédito a meses sin intereses. Pregúntame por los plazos disponibles al agendar.</div></details>
         </div>
       </div>
       <div class="faq-group reveal">
@@ -1057,10 +1068,11 @@ body.loading{overflow:hidden}
   </section>
 
   <section class="wrap" style="padding-bottom:60px">
-    <div class="info-line reveal">
+    <div class="info-line info-line--4 reveal">
       <div><small>Dirección</small><p>Calle del Prado 208,<br>Jardines del Moral, León, Gto.</p></div>
       <div><small>Horario</small><p>Lunes a sábado<br>9:30 a 12:30 · con cita</p></div>
       <div><small>WhatsApp</small><p><a class="js-wa" href="#" data-msg="Hola, Dr. García. Tengo una pregunta.">477 765 3849</a></p></div>
+      <div><small>Formas de pago</small><p>Efectivo, transferencia y tarjeta a meses sin intereses</p></div>
     </div>
   </section>
   <section class="reveal" style="padding-bottom:var(--sec)">
