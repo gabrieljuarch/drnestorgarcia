@@ -1,0 +1,78 @@
+{
+  "_instrucciones": "SEO de cada página. Edita 'titulo' (máx. ~60 caracteres) y 'descripcion' (máx. ~155) y vuelve a generar el sitio con: python3 _fuente/build.py",
+  "dominio": "https://drnestorgarciaplastico.com",
+  "paginas": [
+    {
+      "vista": "inicio",
+      "ruta": "",
+      "titulo": "Dr. Néstor García | Cirujano plástico en León, Gto.",
+      "descripcion": "Cirujano plástico certificado por el CMCPER, especialista en lipoescultura y aumento mamario en León, Guanajuato. Agenda tu valoración.",
+      "indexar": true,
+      "prioridad": "1.0"
+    },
+    {
+      "vista": "doctor",
+      "ruta": "sobre-mi",
+      "titulo": "Sobre mí | Dr. Néstor García, cirujano plástico en León",
+      "descripcion": "Cirujano plástico, estético y reconstructivo egresado de la UNAM y certificado por el CMCPER, con 8 años de experiencia en León, Guanajuato.",
+      "indexar": true,
+      "prioridad": "0.8"
+    },
+    {
+      "vista": "lipoescultura",
+      "ruta": "lipoescultura",
+      "titulo": "Lipoescultura en León | Dr. Néstor García",
+      "descripcion": "Lipoescultura 360°, abdominoplastia y mommy makeover en León con un cirujano plástico certificado. Seguimiento personal hasta tu alta.",
+      "indexar": true,
+      "prioridad": "0.9"
+    },
+    {
+      "vista": "busto",
+      "ruta": "aumento-de-busto",
+      "titulo": "Aumento y levantamiento de busto en León | Dr. Néstor García",
+      "descripcion": "Aumento de busto con implantes Motiva y Silimed y levantamiento de busto en León, con un cirujano plástico certificado por el CMCPER.",
+      "indexar": true,
+      "prioridad": "0.9"
+    },
+    {
+      "vista": "botox",
+      "ruta": "botox-y-rellenos",
+      "titulo": "Bótox y ácido hialurónico en León | Dr. Néstor García",
+      "descripcion": "Suaviza líneas de expresión y recupera volumen con bótox y ácido hialurónico, aplicados por un cirujano plástico certificado en León.",
+      "indexar": true,
+      "prioridad": "0.8"
+    },
+    {
+      "vista": "preguntas",
+      "ruta": "preguntas-frecuentes",
+      "titulo": "Preguntas frecuentes | Dr. Néstor García, cirujano plástico",
+      "descripcion": "Valoración, anestesia, recuperación, formas de pago y pacientes de otras ciudades: resuelve tus dudas antes de tu cirugía plástica en León.",
+      "indexar": true,
+      "prioridad": "0.7"
+    },
+    {
+      "vista": "contacto",
+      "ruta": "contacto",
+      "titulo": "Contacto | Dr. Néstor García, cirujano plástico en León",
+      "descripcion": "Agenda tu valoración. Consultorio en Calle del Prado 208, Jardines del Moral, León, Gto. Lunes a sábado con cita. WhatsApp 477 765 3849.",
+      "indexar": true,
+      "prioridad": "0.8"
+    },
+    {
+      "vista": "privacidad",
+      "ruta": "aviso-de-privacidad",
+      "titulo": "Aviso de privacidad | Dr. Néstor García",
+      "descripcion": "Aviso de privacidad integral del sitio del Dr. Néstor Misael García Herrera, cirujano plástico en León, Guanajuato.",
+      "indexar": false,
+      "prioridad": "0.2"
+    },
+    {
+      "vista": "cookies",
+      "ruta": "politica-de-cookies",
+      "titulo": "Política de cookies | Dr. Néstor García",
+      "descripcion": "Qué cookies usa el sitio del Dr. Néstor García y cómo cambiar tu elección en cualquier momento.",
+      "indexar": false,
+      "prioridad": "0.2"
+    }
+  ]
+}

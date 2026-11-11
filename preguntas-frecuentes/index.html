@@ -1,0 +1,765 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ============================================================
+     SITIO WEB · DR. NÉSTOR GARCÍA · CIRUJANO PLÁSTICO Y RECONSTRUCTIVO
+     Archivo generado con _fuente/build.py: los cambios se hacen en
+     _fuente/plantilla.html y _fuente/seo.json, no aquí.
+     Elaborado por Gabriel Juárez · gabrieljuarch.com
+     ============================================================ -->
+
+<title>Preguntas frecuentes | Dr. Néstor García, cirujano plástico</title>
+<meta name="description" content="Valoración, anestesia, recuperación, formas de pago y pacientes de otras ciudades: resuelve tus dudas antes de tu cirugía plástica en León.">
+<meta name="author" content="Dr. Néstor Misael García Herrera">
+<link rel="canonical" href="https://drnestorgarciaplastico.com/preguntas-frecuentes/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+
+<!-- Open Graph (vista previa al compartir en WhatsApp/Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:title" content="Preguntas frecuentes | Dr. Néstor García, cirujano plástico">
+<meta property="og:url" content="https://drnestorgarciaplastico.com/preguntas-frecuentes/">
+<meta property="og:site_name" content="Dr. Néstor García · Cirujano plástico">
+<meta property="og:description" content="Valoración, anestesia, recuperación, formas de pago y pacientes de otras ciudades: resuelve tus dudas antes de tu cirugía plástica en León.">
+<meta property="og:image" content="https://drnestorgarciaplastico.com/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#161616">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon-48.png" sizes="48x48" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<!-- Tipografías del manual de marca -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@400;500;600&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   1. VARIABLES DE MARCA (Manual de identidad, pág. 08 y 09)
+   ============================================================ */
+:root{
+  --carbon:#161616;          /* textos y bloques oscuros */
+  --naranja:#C8611E;         /* acento: líneas, detalles, hover */
+  --naranja-prof:#9A4513;    /* textos en naranja (contraste AA) */
+  --piedra:#5E5752;          /* textos secundarios */
+  --arena:#F6EEE7;           /* fondos de sección */
+  --marfil:#FBF8F5;          /* fondo general */
+  --blanco:#FFFFFF;
+  --linea:#E3D7CC;           /* filetes finos */
+  --wa:#25D366;              /* verde oficial de WhatsApp (solo el botón flotante) */
+
+  --f-titulo:'Marcellus', Georgia, serif;
+  --f-etiqueta:'Montserrat', Arial, sans-serif;
+  --f-texto:'Nunito Sans', Arial, sans-serif;
+
+  --gutter:clamp(20px, 5vw, 72px);
+  --max:1240px;
+  --sec:clamp(96px, 13vw, 168px);   /* espaciado generoso entre secciones */
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+/* ============================================================
+   2. BASE
+   ============================================================ */
+*,*::before,*::after{box-sizing:border-box;border-radius:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--marfil);color:var(--carbon);font-family:var(--f-texto);font-size:17px;line-height:1.7;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+p{margin:0 0 1.1em}
+h1,h2,h3{font-family:var(--f-titulo);font-weight:400;line-height:1.12;margin:0;letter-spacing:.2px}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--naranja);outline-offset:3px}
+.wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 var(--gutter)}
+.sec{padding:var(--sec) 0}
+.sec--arena{background:var(--arena)}
+.sec--carbon{background:var(--carbon);color:var(--blanco)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Etiqueta superior de sección (Montserrat espaciada) */
+.kicker{display:block;font-family:var(--f-etiqueta);font-size:11.5px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--naranja-prof);margin-bottom:22px}
+.sec--carbon .kicker{color:#E9A273}
+.h2{font-size:clamp(34px,4.6vw,58px)}
+.lead{font-size:clamp(18px,1.6vw,21px);color:var(--piedra);max-width:620px}
+.sec--carbon .lead{color:#CFC6BE}
+
+/* Botones rectos (sin esquinas redondeadas) */
+.btn{display:inline-flex;align-items:center;gap:14px;padding:18px 30px;background:var(--carbon);color:var(--blanco);font-family:var(--f-etiqueta);font-size:12.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;border:1px solid var(--carbon);cursor:pointer;transition:background .35s var(--ease),border-color .35s var(--ease),color .35s}
+.btn:hover{background:var(--naranja);border-color:var(--naranja)}
+.btn--claro{background:transparent;color:var(--carbon)}
+.btn--claro:hover{color:var(--blanco)}
+.sec--carbon .btn{background:var(--blanco);color:var(--carbon);border-color:var(--blanco)}
+.sec--carbon .btn:hover{background:var(--naranja);color:var(--blanco);border-color:var(--naranja)}
+.arrow{width:22px;height:10px;transition:transform .35s var(--ease)}
+.btn:hover .arrow,.link:hover .arrow{transform:translateX(6px)}
+.link{display:inline-flex;align-items:center;gap:12px;font-family:var(--f-etiqueta);font-size:12px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;padding-bottom:6px;border-bottom:1px solid var(--linea);transition:border-color .3s,color .3s}
+.link:hover{border-bottom-color:var(--naranja);color:var(--naranja-prof)}
+
+/* ============================================================
+   3. ANIMACIONES AL HACER SCROLL (fade-in sutil)
+   ============================================================ */
+.reveal{opacity:0;transform:translateY(34px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.12s}.reveal.d2{transition-delay:.24s}.reveal.d3{transition-delay:.36s}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+
+/* ============================================================
+   4. PANTALLA DE CARGA (imagotipo + nombre, 2 segundos)
+   ============================================================ */
+#loader{position:fixed;inset:0;z-index:999;background:var(--marfil);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:26px;transition:opacity .6s var(--ease),visibility .6s}
+#loader .l-sym{width:min(180px,40vw);opacity:0;transform:scale(.92);animation:lSym .9s var(--ease) .1s forwards}
+#loader .l-name{width:min(420px,78vw);opacity:0;transform:translateY(12px);animation:lName .8s var(--ease) .8s forwards}
+#loader .l-line{width:0;height:1px;background:var(--naranja);animation:lLine .6s var(--ease) 1.25s forwards}
+@keyframes lSym{to{opacity:1;transform:none}}
+@keyframes lName{to{opacity:1;transform:none}}
+@keyframes lLine{to{width:60px}}
+body.loaded #loader{opacity:0;visibility:hidden}
+body.loading{overflow:hidden}
+
+/* ============================================================
+   5. ENCABEZADO
+   ============================================================ */
+.hdr{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(251,248,245,.97);backdrop-filter:blur(8px);transition:box-shadow .4s,padding .4s;padding:18px 0}
+.hdr.solid{box-shadow:0 1px 0 var(--linea);padding:10px 0}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;max-width:1400px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:46px;height:auto}
+.brand .b-txt{display:flex;flex-direction:column;align-items:center;text-align:center;line-height:1}
+.brand .b-name{font-family:var(--f-titulo);font-size:15px;letter-spacing:2.4px}
+.brand .b-sub{font-family:var(--f-etiqueta);font-size:6.6px;font-weight:500;letter-spacing:1.5px;color:var(--piedra);margin-top:5px}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a,.nav button.dd{font-family:var(--f-etiqueta);font-size:11.5px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;position:relative;padding:6px 0;white-space:nowrap;cursor:pointer}
+.nav button.dd{background:none;border:0}
+.nav a::after,.nav button.dd::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--naranja);transition:width .35s var(--ease)}
+.nav a:hover::after,.nav a.active::after,.nav .has-dd:hover button.dd::after{width:100%}
+.has-dd{position:relative}
+.dd-menu{position:absolute;top:calc(100% + 14px);left:-24px;min-width:300px;background:var(--marfil);border-top:2px solid var(--naranja);box-shadow:0 18px 40px rgba(22,22,22,.08);padding:12px 0;opacity:0;visibility:hidden;transform:translateY(8px);transition:.3s var(--ease)}
+.has-dd:hover .dd-menu,.has-dd:focus-within .dd-menu{opacity:1;visibility:visible;transform:none}
+.dd-menu a{display:block;padding:12px 24px;text-transform:none;letter-spacing:.3px;font-family:var(--f-texto);font-size:15px;font-weight:600}
+.dd-menu a::after{display:none}
+.dd-menu a:hover{color:var(--naranja-prof);background:var(--arena)}
+.nav .btn{padding:14px 20px;font-size:11px;color:var(--blanco)}
+.nav .btn::after{display:none}
+.burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;position:relative}
+.burger span{position:absolute;left:10px;right:10px;height:1.5px;background:var(--carbon);transition:.3s}
+.burger span:nth-child(1){top:16px}.burger span:nth-child(2){top:22px}.burger span:nth-child(3){top:28px}
+.menu-open .burger span:nth-child(1){top:22px;transform:rotate(45deg)}
+.menu-open .burger span:nth-child(2){opacity:0}
+.menu-open .burger span:nth-child(3){top:22px;transform:rotate(-45deg)}
+
+/* ============================================================
+   6. VISTAS (el sitio tiene 9 "páginas" dentro de este archivo)
+   ============================================================ */
+.view{display:none}
+.view.on{display:block;animation:viewIn .7s var(--ease)}
+@keyframes viewIn{from{opacity:0}to{opacity:1}}
+
+/* ============================================================
+   7. PORTADA DE INICIO (asimétrica)
+   ============================================================ */
+.hero{min-height:100svh;padding-top:92px;display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);align-items:stretch;position:relative;overflow:hidden}
+.hero-txt{display:flex;flex-direction:column;justify-content:center;padding:70px var(--gutter) 110px calc(max(var(--gutter), (100vw - var(--max))/2 + var(--gutter)));position:relative;z-index:2}
+.hero h1{font-size:clamp(40px,4.5vw,66px);margin-bottom:28px;max-width:640px}
+.hero-logo{width:clamp(200px,17vw,250px);margin-bottom:34px}
+.hero-logo svg{display:block;width:100%;height:auto}
+/* En escritorio el logotipo va hasta arriba de la sección y el texto sigue debajo */
+@media (min-width:1181px){.hero-txt{justify-content:flex-start;padding-top:56px}}
+.hero-logo--h{width:clamp(380px,30vw,460px);margin-bottom:46px}
+.hero-logo--v{display:none}
+.mob-only{display:none}
+.hero h1 em{font-style:normal;color:var(--naranja-prof)}
+.hero .lead{margin-bottom:42px}
+.hero-ctas{display:flex;flex-wrap:wrap;align-items:center;gap:30px}
+.hero-img{position:relative;overflow:hidden;background:#2a2522}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;animation:kenburns 16s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero-badge{position:absolute;left:0;bottom:56px;background:var(--marfil);padding:20px 26px 20px 22px;display:flex;align-items:center;gap:16px;border-left:3px solid var(--naranja)}
+.hero-badge b{font-family:var(--f-titulo);font-weight:400;font-size:20px;display:block;line-height:1.1;margin-bottom:8px}
+.hero-badge small{display:block;font-family:var(--f-texto);font-size:14px;color:var(--carbon);margin:4px 0 6px}
+.hero-badge span{font-family:var(--f-etiqueta);font-size:10.5px;letter-spacing:2px;text-transform:uppercase;color:var(--piedra)}
+.hero-sym{position:absolute;left:-60px;bottom:-40px;width:420px;opacity:.05;pointer-events:none;z-index:1}
+.scroll-cue{position:absolute;left:calc(max(var(--gutter), (100vw - var(--max))/2 + var(--gutter)));bottom:30px;font-family:var(--f-etiqueta);font-size:10px;letter-spacing:3px;color:var(--piedra);display:flex;align-items:center;gap:12px;z-index:2}
+.scroll-cue i{display:block;width:1px;height:38px;background:var(--linea);position:relative;overflow:hidden}
+.scroll-cue i::after{content:"";position:absolute;left:0;top:-38px;width:1px;height:38px;background:var(--naranja);animation:cue 2.2s ease-in-out infinite}
+@keyframes cue{to{top:38px}}
+
+/* Cinta de procedimientos en movimiento (da "vida") */
+.marquee{background:var(--carbon);color:var(--blanco);overflow:hidden;padding:24px 0;white-space:nowrap}
+.marquee-track{display:inline-flex;gap:56px;animation:marquee 38s linear infinite;padding-left:56px}
+.marquee span{font-family:var(--f-titulo);font-size:clamp(20px,2.2vw,28px);display:inline-flex;align-items:center;gap:56px}
+.marquee span::after{content:"";width:7px;height:7px;background:var(--naranja);transform:rotate(45deg)}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* Solo tres datos importantes */
+.facts{display:flex;flex-wrap:wrap;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.fact{flex:1 1 240px;padding:40px 34px 40px 0;display:flex;align-items:baseline;gap:18px}
+.fact + .fact{padding-left:34px;border-left:1px solid var(--linea)}
+.fact b{font-family:var(--f-titulo);font-weight:400;font-size:clamp(44px,5vw,64px);line-height:1;color:var(--carbon)}
+.fact span{font-family:var(--f-etiqueta);font-size:11.5px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--piedra);max-width:170px;line-height:1.5}
+
+/* ============================================================
+   8. LISTADO EDITORIAL DE PROCEDIMIENTOS (sin tarjetas)
+   ============================================================ */
+.proc-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px;align-items:end;margin-bottom:64px}
+.proc-list{border-top:1px solid var(--linea)}
+.proc-row{display:grid;grid-template-columns:90px minmax(0,1fr) 300px;gap:40px;align-items:center;padding:40px 0;border-bottom:1px solid var(--linea);position:relative}
+.proc-row .tag{display:inline-block;font-family:var(--f-etiqueta);font-size:10.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--blanco);background:var(--naranja-prof);padding:5px 10px;margin-bottom:14px}
+.proc-row .num{font-family:var(--f-etiqueta);font-size:13px;font-weight:600;letter-spacing:2px;color:var(--naranja-prof)}
+.proc-row h3{font-size:clamp(28px,3.2vw,42px);margin-bottom:12px;transition:color .35s,transform .5s var(--ease)}
+.proc-row p{color:var(--piedra);margin-bottom:16px;max-width:560px}
+.proc-row .pimg{overflow:hidden;aspect-ratio:4/3}
+.proc-row .pimg img{width:100%;height:100%;object-fit:cover;filter:grayscale(.35);transform:scale(1.04);transition:filter .6s,transform .9s var(--ease)}
+.proc-row:hover .pimg img{filter:none;transform:scale(1)}
+.proc-row:hover h3{color:var(--naranja-prof);transform:translateX(8px)}
+
+/* ============================================================
+   9. BLOQUES DIVIDIDOS FOTO / TEXTO (alineación alterna)
+   ============================================================ */
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.split--rev .split-media{order:2}
+.split-media{position:relative}
+.split-media img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.split-media.wide img{aspect-ratio:3/2}
+.split-media::after{content:"";position:absolute;width:42%;height:42%;border:1px solid var(--naranja);right:-22px;bottom:-22px;z-index:-1}
+.split--rev .split-media::after{right:auto;left:-22px}
+.bleed{margin-left:calc(-1 * max(var(--gutter), (100vw - var(--max))/2 + var(--gutter)))}
+
+/* Lista numerada con filetes (por qué elegirlo, pilares) */
+.points{list-style:none;margin:36px 0 0;padding:0;counter-reset:p}
+.points li{counter-increment:p;display:grid;grid-template-columns:52px minmax(0,1fr);gap:8px;padding:22px 0;border-top:1px solid var(--linea)}
+.points li::before{content:counter(p,decimal-leading-zero);font-family:var(--f-etiqueta);font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--naranja-prof);padding-top:5px}
+.points b{display:block;font-family:var(--f-titulo);font-weight:400;font-size:23px;margin-bottom:4px}
+.points span{color:var(--piedra)}
+.sec--carbon .points li{border-color:#3A3633}
+.sec--carbon .points span{color:#CFC6BE}
+
+/* Proceso en 4 pasos con línea que se dibuja */
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;margin-top:70px;position:relative}
+.steps::before{content:"";position:absolute;top:0;left:0;height:1px;width:0;background:var(--naranja);transition:width 1.8s var(--ease)}
+.steps.in::before{width:100%}
+.step{position:relative;padding-top:42px}
+.step small{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2.5px;color:var(--naranja-prof)}
+.step h3{font-size:26px;margin:10px 0 10px}
+.step p{color:var(--piedra);font-size:16px}
+
+/* Cita grande */
+.quote{font-family:var(--f-titulo);font-size:clamp(26px,3vw,38px);line-height:1.3;margin:0 0 28px;position:relative;padding-top:40px}
+.quote::before{content:"“";position:absolute;top:-28px;left:-6px;font-size:120px;color:var(--naranja);line-height:1}
+
+/* Reseñas rotativas */
+.reviews{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:60px;align-items:center}
+.rev-stage{position:relative;min-height:260px}
+.rev{position:absolute;inset:0;opacity:0;transform:translateY(16px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+.rev.on{opacity:1;transform:none}
+.rev p{font-family:var(--f-titulo);font-size:clamp(22px,2.4vw,30px);line-height:1.4;margin-bottom:22px}
+.rev cite{font-style:normal;font-family:var(--f-etiqueta);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--naranja-prof)}
+.stars{color:var(--naranja);letter-spacing:5px;font-size:15px;margin-bottom:16px}
+.rev-dots{display:flex;gap:10px;margin-top:20px}
+.rev-dots button{width:34px;height:2px;border:0;background:var(--linea);cursor:pointer;padding:0;transition:background .3s}
+.rev-dots button.on{background:var(--naranja)}
+
+/* Redes */
+.social{display:flex;flex-wrap:wrap;gap:46px;align-items:center;margin-top:30px}
+.social a{display:inline-flex;align-items:center;gap:14px;font-family:var(--f-titulo);font-size:24px;transition:color .3s}
+.social a:hover{color:var(--naranja-prof)}
+.social svg{width:26px;height:26px}
+
+/* ============================================================
+   10. FORMULARIO (líneas, sin cajas redondeadas)
+   ============================================================ */
+.form-wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,7vw,110px);align-items:start}
+.form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 34px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--piedra)}
+.field input,.field select,.field textarea{background:transparent;border:0;border-bottom:1px solid #CDBFB3;padding:12px 0;font-size:17px;outline:none;transition:border-color .3s;width:100%;appearance:none;-webkit-appearance:none}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23161616' stroke-width='1.4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 4px center;padding-right:24px;cursor:pointer}
+.field textarea{resize:vertical;min-height:84px}
+.field input:focus,.field select:focus,.field textarea:focus{border-bottom-color:var(--naranja)}
+.field.otro{display:none}
+.field.otro.on{display:flex}
+.check{grid-column:1/-1;display:flex;gap:14px;align-items:flex-start;font-size:14.5px;color:var(--piedra);line-height:1.5}
+.check input{width:18px;height:18px;margin-top:2px;accent-color:var(--naranja);flex:none}
+.check a{color:var(--naranja-prof);border-bottom:1px solid currentColor}
+.hp{position:absolute;left:-9999px}
+.form .btn{grid-column:1/-1;justify-self:start}
+.form-ok{display:none;grid-column:1/-1;border-left:3px solid var(--naranja);padding:18px 22px;background:var(--arena)}
+.form-ok.on{display:block}
+.form-ok b{font-family:var(--f-titulo);font-weight:400;font-size:24px;display:block;margin-bottom:6px}
+.side-note{margin-top:34px;padding-top:26px;border-top:1px solid var(--linea);font-size:15.5px;color:var(--piedra)}
+.side-note a{color:var(--carbon);border-bottom:1px solid var(--naranja)}
+
+/* ============================================================
+   11. PÁGINAS INTERIORES
+   ============================================================ */
+.page-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:78svh;padding-top:92px;align-items:stretch}
+.page-hero--rev .ph-img{order:-1}
+.ph-txt{display:flex;flex-direction:column;justify-content:center;padding:80px var(--gutter) 80px}
+/* Contacto: texto más arriba y foto más contenida */
+.page-hero--compact{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);min-height:0}
+.page-hero--compact .ph-txt{justify-content:flex-start;padding-top:110px}
+.page-hero--compact .ph-img{max-height:620px}
+/* Busto: foto a la izquierda y más contenida */
+.page-hero--rev.page-hero--compact{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr)}
+.page-hero--rev.page-hero--compact .ph-img{max-height:560px}
+.page-hero--rev.page-hero--compact .ph-txt{padding-left:clamp(40px,6vw,96px)}
+/* Bótox: mismo tratamiento que busto, con la foto a la derecha */
+.page-hero--proc{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr)}
+.page-hero--proc .ph-img{height:560px;max-height:560px}
+.page-hero--proc .ph-txt{padding-left:calc(max(var(--gutter), (100vw - var(--max))/2 + var(--gutter)));padding-right:clamp(40px,6vw,96px)}
+.ph-txt h1{font-size:clamp(40px,5vw,72px);margin-bottom:24px}
+/* Páginas con el texto alineado arriba (El doctor) */
+.page-hero--top .ph-txt{justify-content:flex-start;padding-top:96px}
+.doc-name{font-size:clamp(46px,5.4vw,80px)!important;font-weight:700;line-height:1.04;margin-bottom:22px!important}
+.doc-sub{font-family:var(--f-titulo);font-size:clamp(22px,2.2vw,30px);color:var(--naranja-prof);margin:0 0 26px;line-height:1.25}
+.ph-img{overflow:hidden;position:relative}
+.ph-img img{width:100%;height:100%;object-fit:cover;animation:kenburns 18s ease-in-out infinite alternate}
+.crumb{font-family:var(--f-etiqueta);font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--piedra);margin-bottom:26px}
+.crumb a:hover{color:var(--naranja-prof)}
+
+/* Columnas de texto (procedimientos incluidos) */
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:50px;margin-top:60px}
+.cols.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.col{border-top:1px solid var(--carbon);padding-top:26px}
+.col h3{font-size:28px;margin-bottom:14px}
+.col p{color:var(--piedra);font-size:16.5px}
+.tick{list-style:none;padding:0;margin:20px 0 0}
+.tick li{position:relative;padding:12px 0;border-bottom:1px solid var(--linea)}
+.sec--carbon .tick li{border-color:#3A3633}
+
+/* Recuperación en línea de tiempo */
+.timeline{margin-top:56px;border-left:1px solid var(--naranja);padding-left:38px}
+.tl{position:relative;padding-bottom:44px}
+.tl:last-child{padding-bottom:0}
+.tl small{font-family:var(--f-etiqueta);font-size:11.5px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--naranja-prof)}
+.tl h3{font-size:26px;margin:6px 0 8px}
+.tl p{color:var(--piedra);max-width:640px}
+/* Formas de pago dentro de "¿Qué incluye tu atención?" */
+.pay{margin-top:34px}
+.pay small{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--naranja-prof);display:block;margin-bottom:10px}
+.pay p{font-family:var(--f-titulo);font-size:21px;line-height:1.4;margin:0;max-width:460px}
+.disclaimer{font-size:14.5px;color:var(--piedra);border-left:2px solid var(--linea);padding-left:18px;margin-top:40px;max-width:700px}
+
+/* Preguntas frecuentes (acordeón) */
+.faq{border-top:1px solid var(--linea);margin-top:40px}
+.faq details{border-bottom:1px solid var(--linea)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:30px;padding:26px 0;font-family:var(--f-titulo);font-size:clamp(20px,2vw,25px)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:hover{color:var(--naranja-prof)}
+.faq details[open] summary{color:var(--naranja-prof)}
+.faq .ans{padding:0 60px 28px 0;color:var(--piedra)}
+.faq-group{margin-top:70px}
+.faq-group:first-child{margin-top:0}
+.faq-group h2{font-family:var(--f-etiqueta);font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--naranja-prof)}
+
+/* Contacto y mapa */
+.info-line{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--linea)}
+.info-line--4{grid-template-columns:repeat(4,minmax(0,1fr))}
+.info-line--4 p{font-size:20px}
+.info-line > div{padding:34px 30px 34px 0}
+.info-line > div + div{padding-left:30px;border-left:1px solid var(--linea)}
+.info-line small{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--naranja-prof);display:block;margin-bottom:10px}
+.info-line p{font-family:var(--f-titulo);font-size:22px;line-height:1.35;margin:0}
+.map{width:100%;height:460px;border:0;display:block;background:var(--arena)}
+/* Formulario de dForms incrustado */
+.dform{width:100%;height:780px;border:0;display:block;background:var(--marfil)}
+.sec--arena .dform{background:var(--arena)}
+
+/* Textos legales */
+.legal{max-width:820px}
+.legal h2{font-size:28px;margin:46px 0 14px}
+.legal p,.legal li{color:#3E3833}
+.legal .draft{font-family:var(--f-etiqueta);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--naranja-prof);border:1px solid var(--naranja);padding:8px 12px;display:inline-block;margin-bottom:24px}
+
+/* ============================================================
+   12. PIE DE PÁGINA
+   ============================================================ */
+.ftr{background:var(--carbon);color:#CFC6BE;padding:100px 0 34px;font-size:15px}
+.ftr-grid{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:50px}
+.ftr-logo svg{width:250px;height:auto}
+.ftr .ftr-h{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--blanco);margin:0 0 20px}
+.ftr a:hover{color:#E9A273}
+.ftr ul{list-style:none;margin:0;padding:0}
+.ftr li{margin-bottom:10px}
+.ftr-legal{margin-top:70px;padding-top:26px;border-top:1px solid #34302D;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 40px;font-size:13px;color:#9C948E}
+.ftr-legal a{border-bottom:1px solid #4A4542}
+.ftr button.link-btn{background:none;border:0;padding:0;color:inherit;cursor:pointer;font-size:inherit;border-bottom:1px solid #4A4542}
+
+/* ============================================================
+   13. WHATSAPP FLOTANTE Y AVISO DE COOKIES
+   ============================================================ */
+.wa{position:fixed;right:24px;bottom:24px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(0,0,0,.22);transition:transform .35s var(--ease)}
+.wa:hover{transform:scale(1.07)}
+.wa svg{width:32px;height:32px;fill:#fff}
+.wa::before{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid var(--wa);animation:pulse 2.8s ease-out infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.7}to{transform:scale(1.55);opacity:0}}
+.wa-tip{position:absolute;right:74px;white-space:nowrap;background:var(--carbon);color:#fff;font-family:var(--f-etiqueta);font-size:11px;letter-spacing:1.5px;padding:10px 14px;opacity:0;transform:translateX(8px);transition:.3s;pointer-events:none}
+.wa:hover .wa-tip{opacity:1;transform:none}
+
+.cookies{position:fixed;left:24px;bottom:24px;z-index:70;max-width:390px;background:var(--carbon);color:#E8E1DA;padding:22px 24px;font-size:14px;line-height:1.6;transform:translateY(30px);opacity:0;visibility:hidden;transition:.5s var(--ease)}
+.cookies.on{transform:none;opacity:1;visibility:visible}
+.cookies b{display:block;font-family:var(--f-titulo);font-weight:400;font-size:21px;color:#fff;margin-bottom:8px}
+.cookies a{color:#E9A273;border-bottom:1px solid currentColor}
+.cookies .c-btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.cookies button{font-family:var(--f-etiqueta);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:12px 18px;cursor:pointer;border:1px solid #fff;background:#fff;color:var(--carbon)}
+.cookies button.alt{background:transparent;color:#fff;border-color:#5E5752}
+.cookies button:hover{background:var(--naranja);border-color:var(--naranja);color:#fff}
+
+/* ============================================================
+   14. RESPONSIVO
+   ============================================================ */
+@media (max-width:1180px){
+  .hero-logo--h{display:none}
+  .hero-logo--v{display:block}
+  .hdr{backdrop-filter:none;background:var(--marfil)}
+  .nav{position:fixed;inset:0;height:100vh;height:100dvh;background:var(--marfil);flex-direction:column;justify-content:center;align-items:flex-start;gap:6px;padding:100px var(--gutter) 40px;transform:translateX(100%);transition:transform .5s var(--ease);overflow-y:auto}
+  .menu-open .nav{transform:none}
+  .menu-open{overflow:hidden}
+  .nav > a,.nav .has-dd > button.dd{font-family:var(--f-titulo);font-size:30px;text-transform:none;letter-spacing:.3px;font-weight:400;padding:10px 0}
+  .nav a::after,.nav button.dd::after{display:none}
+  .dd-menu{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;background:none;padding:0 0 10px 16px;min-width:0}
+  .dd-menu a{padding:8px 0;font-size:17px}
+  .nav .btn{margin-top:24px}
+  .burger{display:block;z-index:2}
+  .hero,.page-hero{grid-template-columns:1fr;padding-top:76px}
+  .hero-img{height:70svh;order:-1}
+  .hero-txt{padding:56px var(--gutter) 90px}
+  .hero-badge{bottom:24px}
+  .scroll-cue{display:none}
+  .ph-img{height:62svh;order:-1}
+  .page-hero--rev .ph-img{order:-1}
+  .page-hero--rev.page-hero--compact,.page-hero--proc{grid-template-columns:1fr}
+  .page-hero--compact .ph-img{order:2;height:48svh}
+  .page-hero--compact .ph-txt,.page-hero--top .ph-txt{padding-top:40px}
+  .dform{height:840px}
+  .ph-txt{padding:56px var(--gutter) 30px}
+  .proc-head,.split,.reviews,.form-wrap{grid-template-columns:1fr}
+  .split--rev .split-media{order:0}
+  .bleed{margin-left:0}
+  .proc-row{grid-template-columns:60px minmax(0,1fr) 220px;gap:24px}
+  .steps{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:50px}
+  .steps::before{display:none}
+  .cols{grid-template-columns:1fr 1fr}
+  .ftr-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:680px){
+  body{font-size:16px}
+  .brand svg{width:46px}.brand .b-name{font-size:15px;letter-spacing:2px}.brand .b-sub{display:none}
+  .proc-row{grid-template-columns:1fr;gap:16px;padding:34px 0}
+  .proc-row .pimg{order:-1}
+  .fact{flex-basis:100%;padding:26px 0}
+  .fact + .fact{padding-left:0;border-left:0;border-top:1px solid var(--linea)}
+  .steps,.cols,.cols.two,.info-line,.form{grid-template-columns:1fr}
+  .info-line > div + div{padding-left:0;border-left:0;border-top:1px solid var(--linea)}
+  .info-line--4{grid-template-columns:1fr}
+  .split-media::after{display:none}
+  .ftr-grid{grid-template-columns:1fr}
+  .mob-only{display:list-item}
+  /* Logotipo de la portada centrado */
+  .hero-logo--v{margin-left:auto;margin-right:auto}
+  /* Menos espacio entre el encabezado de cada página y la primera sección */
+  .page-hero + .sec{padding-top:24px}
+  .page-hero .ph-txt{padding-bottom:16px}
+  .dd-menu a{white-space:normal}
+  .faq .ans{padding-right:0}
+  .cookies{left:12px;right:12px;bottom:12px;max-width:none}
+  .wa{right:16px;bottom:16px;width:56px;height:56px}
+  .rev-stage{min-height:330px}
+}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "¿Qué es la valoración y cómo la agendo?", "acceptedAnswer": {"@type": "Answer", "text": "Es una consulta conmigo para revisar tu caso, resolver tus dudas y definir un plan. Puedes agendarla por WhatsApp o dejando tus datos en el formulario."}}, {"@type": "Question", "name": "¿Necesito estudios previos?", "acceptedAnswer": {"@type": "Answer", "text": "Para cirugía, sí. Te indico los estudios de laboratorio necesarios para operar con seguridad."}}, {"@type": "Question", "name": "¿Cuáles son las formas de pago?", "acceptedAnswer": {"@type": "Answer", "text": "Acepto efectivo, transferencia electrónica y tarjeta de crédito a meses sin intereses. Pregúntame por los plazos disponibles al agendar."}}, {"@type": "Question", "name": "¿Qué tipo de anestesia se usa?", "acceptedAnswer": {"@type": "Answer", "text": "Depende del procedimiento. La aplica un anestesiólogo especialista, que te explica todo antes de la cirugía."}}, {"@type": "Question", "name": "¿Dónde se realiza la cirugía?", "acceptedAnswer": {"@type": "Answer", "text": "En instalaciones hospitalarias equipadas para cirugía. Te doy todos los detalles en tu valoración."}}, {"@type": "Question", "name": "¿Cuánto dura la recuperación?", "acceptedAnswer": {"@type": "Answer", "text": "Varía según el procedimiento. Muchas pacientes regresan a actividades ligeras en pocas semanas. En tu valoración recibes tiempos exactos para tu caso y tu tipo de trabajo."}}, {"@type": "Question", "name": "¿Duele mucho?", "acceptedAnswer": {"@type": "Answer", "text": "Es normal sentir molestia los primeros días, que se controla bien con el medicamento indicado."}}, {"@type": "Question", "name": "¿Cuándo puedo volver al gimnasio?", "acceptedAnswer": {"@type": "Answer", "text": "El ejercicio ligero se retoma primero y el intenso más adelante. Yo te lo indico según tu evolución."}}, {"@type": "Question", "name": "¿Atiende pacientes de otras ciudades?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. Atiendo pacientes de San Francisco del Rincón, Irapuato, Silao y otras ciudades. Te ayudo a organizar tus citas para que hagas el menor número de viajes posible."}}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Physician", "@id": "https://drnestorgarciaplastico.com/#consultorio", "name": "Dr. Néstor García · Cirujano plástico y reconstructivo", "alternateName": "Dr. Néstor Misael García Herrera", "description": "Cirujano plástico, estético y reconstructivo certificado por el CMCPER, especialista en lipoescultura y aumento mamario en León, Guanajuato.", "url": "https://drnestorgarciaplastico.com/", "image": "https://drnestorgarciaplastico.com/img/og-image.jpg", "logo": "https://drnestorgarciaplastico.com/apple-touch-icon.png", "telephone": "+52 477 765 3849", "email": "drnestorgarciacirugiaplastica@gmail.com", "medicalSpecialty": "PlasticSurgery", "address": {"@type": "PostalAddress", "streetAddress": "Calle del Prado 208, Jardines del Moral", "addressLocality": "León", "addressRegion": "Guanajuato", "postalCode": "37160", "addressCountry": "MX"}, "geo": {"@type": "GeoCoordinates", "latitude": 21.1504566, "longitude": -101.6919248}, "hasMap": "https://maps.app.goo.gl/Kqccn2uwh1JV8Kvp6", "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "opens": "09:30", "closes": "12:30"}], "areaServed": {"@type": "City", "name": "León, Guanajuato"}, "paymentAccepted": "Efectivo, transferencia, tarjeta de crédito", "sameAs": ["https://www.instagram.com/dr.nestor_cirugiaplastica/", "https://www.facebook.com/profile.php?id=61572596087909"]}</script>
+</head>
+
+<body class="loading">
+<script>try{if(sessionStorage.getItem("ng_intro")){document.body.className="loaded"}}catch(e){}</script>
+
+<!-- ============================================================
+     PANTALLA DE CARGA: imagotipo y debajo el nombre (2 s)
+     ============================================================ -->
+<div id="loader" aria-hidden="true">
+  <div class="l-sym"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 290 243" role="img" aria-label="Imagotipo NG"><g transform="translate(-4.75 0) scale(2.38)"><g fill="#161616"><path d="M15.8 25 C 16.4 50, 16.4 75, 15.4 90 L 19.8 90 C 18.8 75, 18.8 50, 19.4 25 Z"/><path d="M5 23 H 22.6 L 19.4 27 C 17 25, 11 23.8, 5 23 Z"/><path d="M10.6 93.4 C 13.4 92.6, 15 91.2, 15.4 88.6 L 19.8 88.6 C 20.2 91.2, 21.8 92.6, 24.6 93.4 Z"/><path d="M17.4 23 L 23.4 23 C 31 30, 40.6 44, 50.6 56 L 46.6 59.6 C 36 46, 26.4 32, 17.4 23 Z"/><path d="M52 66 C 58 76, 66 86, 76 91 C 88 96, 104 94, 112 84 C 116 78, 118 72, 119 66 L 116.4 66 C 115 74, 110 82, 98 87 C 86 90.5, 74 85, 64 77 C 59 72.6, 55 69, 52 66 Z"/><path d="M95 64.4 H122 V66.4 H95 Z"/><path d="M77 27.8 C 90 25, 106 28, 114 40 L 114 47 L 112.8 47 C 110 38, 100 30.6, 86 29.6 C 82 29.4, 79 29, 77 27.8 Z"/></g><g fill="#C8611E"><path d="M57 2 C 52 9, 49 15, 51 22 C 53 29, 60 33, 59 42 C 58 50, 50 56, 46 64 C 43 71, 45 80, 51 87 C 47 80, 46.4 72, 48.6 66 C 51.6 58, 60.6 51, 61 42 C 61.4 33, 54 28, 52.6 21.6 C 51.6 15, 54 8, 57 2 Z"/><path d="M58.6 13 C 60 17, 64 19, 70 21.4 C 76 24, 77 28.4, 75 32 C 73 35.6, 68 37, 67.6 41 C 67 46, 74 50, 78 56 C 82 63, 81 72, 76 80 C 74 83.4, 72 86, 70 88.6 C 73 85, 75 82, 77 78 C 80 71, 80 63.4, 76.4 57 C 72.4 51, 65.4 47, 66 41 C 66.4 36, 71.6 34.4, 73.4 31 C 75 27.6, 73.6 24.4, 68.6 22.4 C 63 20.4, 59.4 18, 58.6 13 Z"/><path d="M64.4 90 C 63 93, 61.6 96, 60.6 100 C 62.4 97, 64 94, 66 90.6 Z"/></g></g></svg></div>
+  <div class="l-name"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 408.24 69.6" role="img" aria-label="Dr. Néstor García, cirujano plástico y reconstructivo"><path fill="#161616" d="M6 6.4Q6 8.3 5.9 10Q5.9 10.8 5.9 11.6Q5.9 12.3 5.9 13.1Q5.9 13.8 5.9 14.5Q5.9 15.2 5.9 15.8Q5.9 16.9 5.9 18.4Q5.9 20 5.9 21.7Q6 23.3 6 24.9Q6.1 26.4 6.1 27.4Q6.4 27.4 6.7 27.5Q7.1 27.5 7.6 27.6Q8 27.6 8.4 27.6Q8.8 27.6 9.1 27.6Q10.3 27.6 11.5 27.5Q12.7 27.3 13.9 26.9Q15 26.4 16 25.7Q17.0 24.9 17.8 23.7Q18.5 22.5 18.9 20.8Q19.4 19.2 19.4 16.9Q19.4 14.3 18.8 12.3Q18.1 10.4 17 9Q15.8 7.6 14 6.9Q12.3 6.2 10 6.2Q9.5 6.2 9 6.3Q8.4 6.3 7.9 6.3Q7.3 6.3 6.8 6.4Q6.3 6.4 6 6.4ZM2.4 4.9Q2.8 4.9 3.1 5Q3.4 5 3.7 5Q4 5 4.2 5Q4.5 5 5.2 5Q5.9 4.9 6.9 4.9Q7.8 4.9 8.9 4.8Q9.9 4.8 10.8 4.8Q13.2 4.8 15.4 5.4Q17.5 6 19.2 7.4Q20.8 8.7 21.8 10.9Q22.7 13.1 22.7 16.4Q22.7 18.7 22.2 20.5Q21.7 22.3 20.8 23.8Q19.9 25.2 18.6 26.2Q17.4 27.2 15.8 27.8Q14.3 28.5 12.6 28.8Q10.8 29.1 8.9 29.1Q8.3 29.1 7.3 29Q6.4 29 5.5 28.9Q4.5 28.9 3.7 28.8Q2.8 28.8 2.4 28.8V28.7Q2.5 28.4 2.6 27.9Q2.7 27.4 2.7 26.6Q2.8 25.8 2.8 24.8Q2.9 23.7 2.9 22.3V11.5Q2.9 10.1 2.8 9Q2.8 8 2.7 7.2Q2.7 6.4 2.6 5.9Q2.5 5.3 2.4 5ZM35.6 22.3Q35.6 23.7 35.7 24.8Q35.7 25.8 35.8 26.6Q35.8 27.4 35.9 27.9Q36 28.4 36.1 28.7V28.8H32.1V28.7Q32.2 28.4 32.3 27.9Q32.4 27.4 32.5 26.6Q32.5 25.8 32.6 24.8Q32.6 23.7 32.6 22.3V11.5Q32.6 10.1 32.6 9Q32.5 8 32.5 7.2Q32.4 6.5 32.3 5.9Q32.2 5.4 32.1 5.1V5L32.8 5.1Q33.2 5.1 33.5 5.1Q33.9 5.1 34.4 5.1Q35 5.1 36.1 5Q37.2 4.8 38.9 4.8Q40.5 4.8 41.9 5.2Q43.2 5.7 44.2 6.5Q45.2 7.3 45.8 8.5Q46.3 9.7 46.3 11.3Q46.3 12.5 46 13.5Q45.7 14.5 45.2 15.3Q44.6 16.2 43.8 16.8Q43 17.4 42.1 17.9L47.9 26Q48.3 26.7 48.7 27.1Q49.1 27.6 49.4 27.9Q49.8 28.2 50.1 28.4Q50.4 28.6 50.7 28.7V28.8H45.9Q45.9 28.5 45.6 28Q45.3 27.4 45 26.9L39.1 18.6Q38.7 18.7 38.3 18.7Q37.9 18.7 37.5 18.7Q37.1 18.7 36.6 18.7Q36.1 18.7 35.6 18.6ZM35.6 17.3Q36.1 17.4 36.6 17.4Q37 17.5 37.5 17.5Q38.7 17.5 39.7 17.1Q40.8 16.7 41.5 16Q42.2 15.2 42.6 14.1Q43 12.9 43 11.4Q43 10.1 42.7 9.1Q42.4 8.1 41.9 7.4Q41.3 6.7 40.5 6.3Q39.6 5.9 38.5 5.9Q37.4 5.9 36.7 6Q36 6.2 35.6 6.3ZM57.1 27.3Q57.1 27 57.2 26.7Q57.3 26.3 57.6 26.1Q57.8 25.8 58.1 25.7Q58.5 25.6 58.8 25.6Q59.2 25.6 59.5 25.7Q59.9 25.8 60.1 26.1Q60.3 26.3 60.5 26.7Q60.6 27 60.6 27.3Q60.6 28.1 60.1 28.6Q59.6 29.1 58.8 29.1Q58.5 29.1 58.1 29Q57.8 28.9 57.6 28.6Q57.3 28.4 57.2 28Q57.1 27.7 57.1 27.3ZM86.8 5 103.9 23.2V11.5Q103.9 10.1 103.9 9Q103.9 8 103.8 7.2Q103.7 6.4 103.6 5.9Q103.5 5.4 103.4 5.1V5H106.4V5.1Q106.3 5.4 106.2 5.9Q106.1 6.4 106.1 7.2Q106 8 106 9Q105.9 10.1 105.9 11.5V29.1H105.4L88.3 11V22.3Q88.3 23.7 88.3 24.8Q88.3 25.8 88.4 26.6Q88.5 27.4 88.5 27.9Q88.6 28.4 88.7 28.7V28.8H85.8V28.7Q85.9 28.4 86 27.9Q86 27.4 86.1 26.6Q86.2 25.8 86.2 24.8Q86.2 23.7 86.2 22.3V11.5Q86.2 10.1 86.2 9Q86.2 8 86.1 7.2Q86 6.4 86 5.9Q85.9 5.4 85.8 5.1V5ZM116.5 5Q118.6 5 120.6 5Q122.7 5 124.4 4.9Q126.1 4.9 127.3 4.9Q128.5 4.8 129 4.7L128.2 6.9Q127.6 6.8 126.9 6.7Q126.2 6.6 125.3 6.5Q124.4 6.4 123.3 6.4Q122.9 6.4 122.3 6.4Q121.7 6.4 121.2 6.5Q120.6 6.5 120 6.5V15.6Q121.7 15.6 123.1 15.5Q124.5 15.4 125.4 15.3Q126.6 15.2 127.4 15.1L126.9 17.5Q125.8 17.4 124.6 17.2Q123.6 17.1 122.3 17Q121.1 16.9 120 16.9V27.3Q122 27.3 123.6 27.2Q125.3 27 126.5 26.8Q127.9 26.6 129.1 26.2L128.6 28.9Q128.4 28.9 128 28.9Q127.6 28.9 127.1 28.9Q126.6 28.9 126.1 28.8Q125.6 28.8 125.1 28.8Q124.6 28.8 124.2 28.8Q123.9 28.8 123.7 28.8H116.5V28.7Q116.6 28.4 116.7 27.9Q116.8 27.4 116.9 26.6Q116.9 25.8 117 24.8Q117 23.7 117 22.3V11.5Q117 10.1 117 9Q116.9 8 116.9 7.2Q116.8 6.4 116.7 5.9Q116.6 5.4 116.5 5.1V5ZM127 0.1Q125.8 0.5 124.5 0.9Q124 1.1 123.4 1.4Q122.8 1.6 122.1 1.9Q121.5 2.1 120.9 2.4Q120.3 2.7 119.7 3L119.4 2.4Q120.4 1.7 121.5 0.8Q122.6 0 123.5 -0.8Q124.5 -1.6 125.5 -2.5ZM148.6 8.8H148.2Q148.1 8.4 147.8 7.9Q147.5 7.4 147.1 7Q146.6 6.6 145.9 6.3Q145.2 6 144.3 6Q143.5 6 142.9 6.3Q142.3 6.5 141.8 7Q141.4 7.4 141.2 8Q141 8.6 141 9.4Q141 10.6 141.6 11.7Q142.3 12.8 143.3 13.8Q144.3 14.9 145.5 16Q146.7 17 147.7 18.2Q148.7 19.3 149.4 20.6Q150.1 21.8 150.1 23.3Q150.1 24.3 149.7 25.4Q149.3 26.5 148.5 27.4Q147.8 28.2 146.5 28.8Q145.3 29.3 143.6 29.3Q142.7 29.3 141.8 29.1Q141 29 140.2 28.7Q139.5 28.5 138.9 28.2Q138.4 27.9 138 27.6L138.4 23.9H138.8Q139 24.7 139.4 25.4Q139.8 26.1 140.4 26.7Q141 27.2 141.8 27.5Q142.6 27.9 143.5 27.9Q144.4 27.9 145 27.6Q145.7 27.3 146.2 26.9Q146.7 26.4 146.9 25.8Q147.2 25.2 147.2 24.4Q147.2 23.4 146.8 22.5Q146.4 21.6 145.8 20.8Q145.2 20 144.4 19.3Q143.6 18.5 142.8 17.8Q141.9 17.0 141.2 16.2Q140.4 15.4 139.7 14.5Q139.1 13.6 138.7 12.6Q138.4 11.5 138.4 10.3Q138.4 9 138.9 7.9Q139.4 6.9 140.2 6.1Q141 5.4 142.1 5Q143.2 4.6 144.3 4.6Q145.1 4.6 145.8 4.7Q146.5 4.8 147.1 5Q147.6 5.2 148 5.4Q148.5 5.6 148.7 5.7ZM165.9 6.5Q164 6.5 162.4 6.6Q160.8 6.8 159.7 7Q158.3 7.3 157.3 7.6L157.8 4.9Q158 4.9 158.4 4.9Q158.8 4.9 159.3 4.9Q159.7 4.9 160.3 5Q160.8 5 161.3 5Q161.8 5 162.2 5Q162.5 5 162.7 5H172.2Q172.3 5 172.7 5Q173.1 5 173.6 5Q174.1 5 174.6 5Q175.1 4.9 175.6 4.9Q176.1 4.9 176.5 4.9Q176.9 4.9 177.1 4.9L177.6 7.6Q176.5 7.3 175.2 7Q174.1 6.8 172.5 6.6Q170.9 6.5 168.9 6.5V22.3Q168.9 23.7 169 24.8Q169 25.8 169.1 26.6Q169.1 27.4 169.2 27.9Q169.3 28.4 169.4 28.7V28.8H165.5V28.7Q165.6 28.4 165.6 27.9Q165.7 27.4 165.8 26.6Q165.9 25.8 165.9 24.8Q165.9 23.7 165.9 22.3ZM196.3 4.6Q199.1 4.6 201.4 5.5Q203.8 6.4 205.5 8Q207.2 9.7 208.2 12Q209.1 14.3 209.1 17Q209.1 18.6 208.8 20.1Q208.4 21.7 207.7 23Q207 24.4 206 25.5Q204.9 26.7 203.6 27.5Q202.3 28.4 200.7 28.8Q199.1 29.3 197.3 29.3Q194.5 29.3 192.1 28.4Q189.8 27.5 188.1 25.9Q186.4 24.3 185.4 22Q184.4 19.7 184.4 16.9Q184.4 15.4 184.8 13.8Q185.2 12.3 185.9 10.9Q186.6 9.5 187.6 8.4Q188.6 7.2 190 6.4Q191.3 5.5 192.9 5.1Q194.5 4.6 196.3 4.6ZM197.3 27.8Q199.1 27.8 200.6 27.2Q202.2 26.5 203.3 25.2Q204.4 24 205 22.2Q205.6 20.3 205.6 18Q205.6 15.5 205 13.3Q204.4 11.1 203.3 9.5Q202.1 7.9 200.4 7Q198.6 6.1 196.3 6.1Q194.5 6.1 192.9 6.7Q191.4 7.4 190.3 8.6Q189.2 9.9 188.6 11.7Q188 13.5 188 15.8Q188 18.4 188.6 20.6Q189.1 22.8 190.3 24.4Q191.5 26 193.2 26.9Q195 27.8 197.3 27.8ZM221.9 22.3Q221.9 23.7 221.9 24.8Q222 25.8 222 26.6Q222.1 27.4 222.2 27.9Q222.3 28.4 222.4 28.7V28.8H218.4V28.7Q218.5 28.4 218.6 27.9Q218.7 27.4 218.7 26.6Q218.8 25.8 218.8 24.8Q218.9 23.7 218.9 22.3V11.5Q218.9 10.1 218.8 9Q218.8 8 218.7 7.2Q218.7 6.5 218.6 5.9Q218.5 5.4 218.4 5.1V5L219.1 5.1Q219.4 5.1 219.8 5.1Q220.2 5.1 220.6 5.1Q221.2 5.1 222.3 5Q223.4 4.8 225.1 4.8Q226.7 4.8 228.1 5.2Q229.4 5.7 230.4 6.5Q231.4 7.3 232 8.5Q232.5 9.7 232.5 11.3Q232.5 12.5 232.2 13.5Q231.9 14.5 231.4 15.3Q230.8 16.2 230 16.8Q229.3 17.4 228.3 17.9L234.1 26Q234.6 26.7 234.9 27.1Q235.3 27.6 235.6 27.9Q236 28.2 236.3 28.4Q236.6 28.6 236.9 28.7V28.8H232.2Q232.1 28.5 231.8 28Q231.6 27.4 231.2 26.9L225.3 18.6Q224.9 18.7 224.5 18.7Q224.2 18.7 223.8 18.7Q223.3 18.7 222.8 18.7Q222.4 18.7 221.9 18.6ZM221.9 17.3Q222.3 17.4 222.8 17.4Q223.3 17.5 223.7 17.5Q224.9 17.5 226 17.1Q227 16.7 227.7 16Q228.4 15.2 228.8 14.1Q229.2 12.9 229.2 11.4Q229.2 10.1 228.9 9.1Q228.7 8.1 228.1 7.4Q227.6 6.7 226.7 6.3Q225.9 5.9 224.7 5.9Q223.6 5.9 222.9 6Q222.2 6.2 221.9 6.3ZM280.6 26Q280.6 26.2 280.6 26.4Q280.5 26.6 280.4 26.7Q279.6 27.3 278.8 27.8Q277.9 28.2 276.9 28.6Q275.9 28.9 274.7 29.1Q273.5 29.3 272.2 29.3Q269.1 29.3 266.7 28.4Q264.2 27.5 262.4 25.9Q260.6 24.3 259.6 22Q258.6 19.7 258.6 16.9Q258.6 15.4 259 13.8Q259.5 12.3 260.2 10.9Q261 9.5 262.2 8.4Q263.3 7.2 264.8 6.4Q266.2 5.5 268 5.1Q269.8 4.6 271.8 4.6Q272.6 4.6 273.5 4.7Q274.3 4.7 275.1 4.9Q275.9 5 276.7 5.2Q277.4 5.4 278.1 5.7L279.2 8.7L279.1 8.8Q278.5 8.2 277.6 7.7Q276.8 7.2 275.8 6.9Q274.8 6.5 273.8 6.3Q272.7 6.1 271.7 6.1Q269.6 6.1 267.8 6.7Q266.1 7.4 264.8 8.6Q263.6 9.9 262.9 11.7Q262.2 13.5 262.2 15.8Q262.2 18.4 262.8 20.5Q263.5 22.7 264.8 24.3Q266.1 25.9 268.1 26.8Q270.1 27.7 272.7 27.7Q273.8 27.7 274.8 27.5Q275.7 27.3 276.3 27.1Q276.9 26.8 277.3 26.5Q277.6 26.1 277.6 25.9V25.2Q277.6 24.1 277.5 23.2Q277.5 22.4 277.4 21.8Q277.4 21.1 277.3 20.7Q277.2 20.2 277.1 19.9V19.8H281.1V19.9Q281 20.2 280.9 20.7Q280.8 21.2 280.7 21.8Q280.7 22.4 280.6 23.3Q280.6 24.2 280.6 25.3ZM306.9 28.8V28.7Q306.9 28.7 306.9 28.5Q306.9 28.3 306.9 28.2Q306.9 27.7 306.8 27.1Q306.6 26.4 306.2 25.5L304.2 21Q303.3 21 301.8 21Q300.2 21 298.4 21Q297.1 21 295.9 21Q294.7 21 293.7 21L291.8 25.4Q291.5 26 291.2 26.7Q291 27.4 291 28.2Q291 28.4 291 28.5Q291 28.7 291.1 28.7V28.8H287.7V28.7Q288 28.4 288.4 27.6Q288.9 26.8 289.4 25.6L298.9 4.5H300.2L309.3 24.8Q309.6 25.5 309.9 26.2Q310.3 26.8 310.6 27.4Q310.9 27.9 311.1 28.3Q311.3 28.6 311.4 28.7V28.8ZM296.1 19.5Q297.1 19.5 298.1 19.5Q299.1 19.5 300.1 19.5Q301 19.5 301.9 19.5Q302.8 19.5 303.6 19.5L298.9 8.9L294.3 19.5ZM322.4 22.3Q322.4 23.7 322.5 24.8Q322.5 25.8 322.6 26.6Q322.6 27.4 322.7 27.9Q322.8 28.4 322.9 28.7V28.8H318.9V28.7Q319 28.4 319.1 27.9Q319.2 27.4 319.3 26.6Q319.3 25.8 319.4 24.8Q319.4 23.7 319.4 22.3V11.5Q319.4 10.1 319.4 9Q319.3 8 319.3 7.2Q319.2 6.5 319.1 5.9Q319 5.4 318.9 5.1V5L319.6 5.1Q320 5.1 320.3 5.1Q320.7 5.1 321.2 5.1Q321.8 5.1 322.9 5Q324 4.8 325.7 4.8Q327.3 4.8 328.7 5.2Q330 5.7 331 6.5Q332 7.3 332.6 8.5Q333.1 9.7 333.1 11.3Q333.1 12.5 332.8 13.5Q332.5 14.5 332 15.3Q331.4 16.2 330.6 16.8Q329.8 17.4 328.9 17.9L334.7 26Q335.1 26.7 335.5 27.1Q335.9 27.6 336.2 27.9Q336.6 28.2 336.9 28.4Q337.2 28.6 337.5 28.7V28.8H332.7Q332.7 28.5 332.4 28Q332.1 27.4 331.8 26.9L325.9 18.6Q325.5 18.7 325.1 18.7Q324.7 18.7 324.3 18.7Q323.9 18.7 323.4 18.7Q322.9 18.7 322.4 18.6ZM322.4 17.3Q322.9 17.4 323.4 17.4Q323.8 17.5 324.3 17.5Q325.5 17.5 326.5 17.1Q327.6 16.7 328.3 16Q329 15.2 329.4 14.1Q329.8 12.9 329.8 11.4Q329.8 10.1 329.5 9.1Q329.2 8.1 328.7 7.4Q328.1 6.7 327.3 6.3Q326.4 5.9 325.3 5.9Q324.2 5.9 323.5 6Q322.8 6.2 322.4 6.3ZM363.8 8.6 363.6 8.7Q362.3 7.5 360.5 6.8Q358.7 6.1 356.5 6.1Q354.4 6.1 352.7 6.7Q351 7.4 349.7 8.6Q348.5 9.9 347.8 11.7Q347.1 13.5 347.1 15.8Q347.1 18.4 347.7 20.6Q348.4 22.8 349.7 24.4Q351 26 353 26.9Q354.9 27.8 357.6 27.8Q358.5 27.8 359.5 27.6Q360.4 27.4 361.3 27Q362.1 26.6 362.9 26.1Q363.7 25.5 364.3 24.8L364.5 24.9L363.2 28.3Q361.9 28.8 360.4 29.1Q358.9 29.3 357.4 29.3Q354.3 29.3 351.8 28.4Q349.2 27.5 347.4 25.9Q345.6 24.3 344.5 22Q343.5 19.7 343.5 16.9Q343.5 15.4 343.9 13.8Q344.3 12.3 345.1 10.9Q345.9 9.5 347 8.4Q348.2 7.2 349.7 6.4Q351.1 5.5 352.9 5.1Q354.7 4.6 356.7 4.6Q359.9 4.6 362.7 5.6ZM373.2 28.7Q373.3 28.4 373.4 27.9Q373.5 27.4 373.5 26.6Q373.6 25.8 373.6 24.8Q373.7 23.7 373.7 22.3V11.5Q373.7 10.1 373.6 9Q373.6 8 373.5 7.2Q373.5 6.4 373.4 5.9Q373.3 5.4 373.2 5.1V5H377.2V5.1Q377.1 5.4 377 5.9Q376.9 6.4 376.8 7.2Q376.8 8 376.7 9Q376.7 10.1 376.7 11.5V22.3Q376.7 23.7 376.7 24.8Q376.8 25.8 376.8 26.6Q376.9 27.4 377 27.9Q377.1 28.4 377.2 28.7V28.8H373.2ZM379.7 0.1Q378.5 0.5 377.2 0.9Q376.6 1.1 376 1.4Q375.5 1.6 374.8 1.9Q374.2 2.1 373.6 2.4Q373 2.7 372.4 3L372 2.4Q373.1 1.7 374.2 0.8Q375.3 0 376.2 -0.8Q377.2 -1.6 378.2 -2.5ZM404 28.8V28.7Q404.1 28.7 404.1 28.5Q404.1 28.3 404.1 28.2Q404.1 27.7 404 27.1Q403.8 26.4 403.4 25.5L401.4 21Q400.5 21 398.9 21Q397.4 21 395.6 21Q394.3 21 393.1 21Q391.8 21 390.9 21L389 25.4Q388.7 26 388.4 26.7Q388.1 27.4 388.1 28.2Q388.1 28.4 388.2 28.5Q388.2 28.7 388.2 28.7V28.8H384.9V28.7Q385.2 28.4 385.6 27.6Q386 26.8 386.6 25.6L396.1 4.5H397.4L406.4 24.8Q406.8 25.5 407.1 26.2Q407.4 26.8 407.7 27.4Q408 27.9 408.3 28.3Q408.5 28.6 408.6 28.7V28.8ZM393.3 19.5Q394.2 19.5 395.2 19.5Q396.3 19.5 397.2 19.5Q398.2 19.5 399.1 19.5Q400 19.5 400.7 19.5L396.1 8.9L391.5 19.5Z"/><rect x="184.12" y="46" width="40" height="1" fill="#C8611E"/><path fill="#5E5752" d="M24.4 68.2Q23.6 68.2 22.9 67.9Q22.2 67.6 21.6 67.1Q21.1 66.6 20.8 65.9Q20.5 65.2 20.5 64.4Q20.5 63.6 20.8 62.9Q21.1 62.2 21.7 61.7Q22.2 61.2 22.9 60.9Q23.6 60.6 24.5 60.6Q25.3 60.6 26 60.9Q26.8 61.2 27.3 61.8L26.6 62.4Q26.2 62 25.6 61.8Q25.1 61.5 24.5 61.5Q23.9 61.5 23.3 61.8Q22.8 62 22.4 62.3Q22 62.7 21.8 63.3Q21.6 63.8 21.6 64.4Q21.6 65 21.8 65.5Q22 66.1 22.4 66.4Q22.8 66.8 23.3 67Q23.9 67.2 24.5 67.2Q25.1 67.2 25.6 67Q26.2 66.8 26.6 66.4L27.3 67Q26.8 67.6 26 67.9Q25.3 68.2 24.4 68.2ZM32.9 68.1V60.7H33.9V68.1ZM40.4 68.1V60.7H43.3Q44.7 60.7 45.5 61.4Q46.4 62 46.4 63.3Q46.4 64.1 46 64.6Q45.6 65.2 44.9 65.5Q44.2 65.8 43.3 65.8H41L41.4 65.4V68.1ZM45.3 68.1 43.4 65.4H44.6L46.5 68.1ZM41.4 65.5 41 64.9H43.2Q44.3 64.9 44.8 64.5Q45.3 64.1 45.3 63.3Q45.3 62.5 44.8 62Q44.3 61.6 43.2 61.6H41L41.4 61.1ZM55.4 68.2Q53.9 68.2 53.1 67.3Q52.2 66.5 52.2 64.9V60.7H53.3V64.9Q53.3 66.1 53.8 66.7Q54.4 67.2 55.4 67.2Q56.4 67.2 56.9 66.7Q57.5 66.1 57.5 64.9V60.7H58.5V64.9Q58.5 66.5 57.7 67.3Q56.8 68.2 55.4 68.2ZM65.8 68.2Q65.2 68.2 64.6 67.9Q64 67.6 63.7 67.1L64.3 66.4Q64.6 66.8 65 67Q65.4 67.3 65.8 67.3Q67.1 67.3 67.1 65.8V61.6H64.4V60.7H68.1V65.7Q68.1 67 67.6 67.6Q67 68.2 65.8 68.2ZM73.4 68.1 76.7 60.7H77.8L81.2 68.1H80L77 61.3H77.5L74.5 68.1ZM74.8 66.2 75.1 65.4H79.3L79.6 66.2ZM86.5 68.1V60.7H87.3L92.2 66.8H91.8V60.7H92.8V68.1H92L87.1 62H87.5V68.1ZM102.6 68.2Q101.8 68.2 101 67.9Q100.3 67.6 99.8 67.1Q99.3 66.6 99 65.9Q98.7 65.2 98.7 64.4Q98.7 63.6 99 62.9Q99.3 62.2 99.8 61.7Q100.3 61.2 101 60.9Q101.8 60.6 102.6 60.6Q103.5 60.6 104.2 60.9Q104.9 61.2 105.4 61.7Q106 62.2 106.3 62.9Q106.6 63.6 106.6 64.4Q106.6 65.2 106.3 65.9Q106 66.6 105.4 67.1Q104.9 67.6 104.2 67.9Q103.5 68.2 102.6 68.2ZM102.6 67.2Q103.2 67.2 103.8 67Q104.3 66.8 104.7 66.4Q105.1 66 105.3 65.5Q105.5 65 105.5 64.4Q105.5 63.8 105.3 63.3Q105.1 62.7 104.7 62.3Q104.3 62 103.8 61.8Q103.2 61.5 102.6 61.5Q102 61.5 101.5 61.8Q100.9 62 100.6 62.3Q100.2 62.7 99.9 63.3Q99.7 63.8 99.7 64.4Q99.7 65 99.9 65.5Q100.2 66 100.6 66.4Q100.9 66.8 101.5 67Q102 67.2 102.6 67.2ZM119.4 68.1V60.7H122.3Q123.3 60.7 124 61Q124.7 61.3 125 61.9Q125.4 62.5 125.4 63.3Q125.4 64.1 125 64.6Q124.7 65.2 124 65.5Q123.3 65.9 122.3 65.9H120L120.5 65.4V68.1ZM120.5 65.5 120 64.9H122.3Q123.3 64.9 123.8 64.5Q124.4 64.1 124.4 63.3Q124.4 62.5 123.8 62Q123.3 61.6 122.3 61.6H120L120.5 61.1ZM131.3 68.1V60.7H132.3V67.2H136.4V68.1ZM140.7 68.1 144 60.7H145.1L148.4 68.1H147.3L144.3 61.3H144.7L141.7 68.1ZM142.1 66.2 142.4 65.4H146.5L146.9 66.2ZM143.7 60.1 145.2 58.7H146.5L144.7 60.1ZM155.9 68.2Q155 68.2 154.3 67.9Q153.5 67.7 153.1 67.3L153.4 66.4Q153.9 66.8 154.5 67Q155.2 67.3 155.9 67.3Q156.5 67.3 156.9 67.1Q157.3 67 157.5 66.7Q157.7 66.5 157.7 66.1Q157.7 65.8 157.5 65.5Q157.2 65.3 156.8 65.1Q156.4 65 156 64.9Q155.5 64.8 155 64.6Q154.5 64.5 154.1 64.3Q153.7 64.1 153.5 63.7Q153.2 63.3 153.2 62.7Q153.2 62.1 153.5 61.7Q153.8 61.2 154.5 60.9Q155.1 60.6 156.1 60.6Q156.7 60.6 157.4 60.8Q158 60.9 158.5 61.3L158.1 62.1Q157.6 61.8 157.1 61.6Q156.6 61.5 156.1 61.5Q155.5 61.5 155 61.7Q154.6 61.8 154.5 62.1Q154.3 62.3 154.3 62.7Q154.3 63.1 154.5 63.3Q154.8 63.5 155.2 63.7Q155.6 63.8 156 63.9Q156.5 64 157 64.2Q157.5 64.3 157.9 64.5Q158.3 64.8 158.5 65.1Q158.8 65.5 158.8 66.1Q158.8 66.6 158.5 67.1Q158.2 67.6 157.5 67.9Q156.9 68.2 155.9 68.2ZM166 68.1V61.6H163.4V60.7H169.6V61.6H167V68.1ZM174.9 68.1V60.7H176V68.1ZM185.7 68.2Q184.9 68.2 184.2 67.9Q183.5 67.6 182.9 67.1Q182.4 66.6 182.1 65.9Q181.8 65.2 181.8 64.4Q181.8 63.6 182.1 62.9Q182.4 62.2 182.9 61.7Q183.5 61.2 184.2 60.9Q184.9 60.6 185.8 60.6Q186.6 60.6 187.3 60.9Q188.1 61.2 188.6 61.8L187.9 62.4Q187.5 62 186.9 61.8Q186.4 61.5 185.8 61.5Q185.2 61.5 184.6 61.8Q184.1 62 183.7 62.3Q183.3 62.7 183.1 63.3Q182.9 63.8 182.9 64.4Q182.9 65 183.1 65.5Q183.3 66.1 183.7 66.4Q184.1 66.8 184.6 67Q185.2 67.2 185.8 67.2Q186.4 67.2 186.9 67Q187.5 66.8 187.9 66.4L188.6 67Q188.1 67.6 187.3 67.9Q186.6 68.2 185.7 68.2ZM197.5 68.2Q196.7 68.2 196 67.9Q195.2 67.6 194.7 67.1Q194.2 66.6 193.9 65.9Q193.6 65.2 193.6 64.4Q193.6 63.6 193.9 62.9Q194.2 62.2 194.7 61.7Q195.2 61.2 196 60.9Q196.7 60.6 197.5 60.6Q198.4 60.6 199.1 60.9Q199.8 61.2 200.3 61.7Q200.9 62.2 201.2 62.9Q201.5 63.6 201.5 64.4Q201.5 65.2 201.2 65.9Q200.9 66.6 200.3 67.1Q199.8 67.6 199.1 67.9Q198.4 68.2 197.5 68.2ZM197.5 67.2Q198.1 67.2 198.7 67Q199.2 66.8 199.6 66.4Q200 66 200.2 65.5Q200.4 65 200.4 64.4Q200.4 63.8 200.2 63.3Q200 62.7 199.6 62.3Q199.2 62 198.7 61.8Q198.1 61.5 197.5 61.5Q196.9 61.5 196.4 61.8Q195.9 62 195.5 62.3Q195.1 62.7 194.9 63.3Q194.6 63.8 194.6 64.4Q194.6 65 194.9 65.5Q195.1 66 195.5 66.4Q195.9 66.8 196.4 67Q196.9 67.2 197.5 67.2ZM216.1 68.1V65.3L216.4 65.9L213.2 60.7H214.3L217 65.1H216.4L219.1 60.7H220.1L216.9 65.9L217.2 65.3V68.1ZM232.4 68.1V60.7H235.3Q236.8 60.7 237.6 61.4Q238.4 62 238.4 63.3Q238.4 64.1 238.1 64.6Q237.7 65.2 237 65.5Q236.3 65.8 235.3 65.8H233L233.5 65.4V68.1ZM237.4 68.1 235.5 65.4H236.7L238.6 68.1ZM233.5 65.5 233 64.9H235.3Q236.3 64.9 236.9 64.5Q237.4 64.1 237.4 63.3Q237.4 62.5 236.9 62Q236.3 61.6 235.3 61.6H233L233.5 61.1ZM244.4 68.1V60.7H249.6V61.6H245.4V67.2H249.7V68.1ZM245.3 64.8V63.9H249.1V64.8ZM259 68.2Q258.1 68.2 257.4 67.9Q256.7 67.6 256.2 67.1Q255.6 66.6 255.3 65.9Q255.1 65.2 255.1 64.4Q255.1 63.6 255.3 62.9Q255.6 62.2 256.2 61.7Q256.7 61.2 257.4 60.9Q258.1 60.6 259 60.6Q259.8 60.6 260.6 60.9Q261.3 61.2 261.8 61.8L261.1 62.4Q260.7 62 260.2 61.8Q259.6 61.5 259 61.5Q258.4 61.5 257.9 61.8Q257.3 62 256.9 62.3Q256.5 62.7 256.3 63.3Q256.1 63.8 256.1 64.4Q256.1 65 256.3 65.5Q256.5 66.1 256.9 66.4Q257.3 66.8 257.9 67Q258.4 67.2 259 67.2Q259.6 67.2 260.2 67Q260.7 66.8 261.1 66.4L261.8 67Q261.3 67.6 260.6 67.9Q259.8 68.2 259 68.2ZM270.8 68.2Q269.9 68.2 269.2 67.9Q268.5 67.6 267.9 67.1Q267.4 66.6 267.1 65.9Q266.8 65.2 266.8 64.4Q266.8 63.6 267.1 62.9Q267.4 62.2 267.9 61.7Q268.5 61.2 269.2 60.9Q269.9 60.6 270.8 60.6Q271.6 60.6 272.3 60.9Q273 61.2 273.6 61.7Q274.1 62.2 274.4 62.9Q274.7 63.6 274.7 64.4Q274.7 65.2 274.4 65.9Q274.1 66.6 273.6 67.1Q273 67.6 272.3 67.9Q271.6 68.2 270.8 68.2ZM270.8 67.2Q271.4 67.2 271.9 67Q272.4 66.8 272.8 66.4Q273.2 66 273.4 65.5Q273.6 65 273.6 64.4Q273.6 63.8 273.4 63.3Q273.2 62.7 272.8 62.3Q272.4 62 271.9 61.8Q271.4 61.5 270.8 61.5Q270.1 61.5 269.6 61.8Q269.1 62 268.7 62.3Q268.3 62.7 268.1 63.3Q267.9 63.8 267.9 64.4Q267.9 65 268.1 65.5Q268.3 66 268.7 66.4Q269.1 66.8 269.6 67Q270.1 67.2 270.8 67.2ZM280.5 68.1V60.7H281.4L286.3 66.8H285.8V60.7H286.9V68.1H286L281.1 62H281.6V68.1ZM295.5 68.2Q294.6 68.2 293.9 67.9Q293.1 67.7 292.6 67.3L293 66.4Q293.5 66.8 294.1 67Q294.8 67.3 295.5 67.3Q296.1 67.3 296.5 67.1Q296.9 67 297.1 66.7Q297.3 66.5 297.3 66.1Q297.3 65.8 297.1 65.5Q296.8 65.3 296.4 65.1Q296 65 295.6 64.9Q295.1 64.8 294.6 64.6Q294.1 64.5 293.7 64.3Q293.3 64.1 293.1 63.7Q292.8 63.3 292.8 62.7Q292.8 62.1 293.1 61.7Q293.4 61.2 294.1 60.9Q294.7 60.6 295.7 60.6Q296.3 60.6 297 60.8Q297.6 60.9 298.1 61.3L297.7 62.1Q297.2 61.8 296.7 61.6Q296.2 61.5 295.7 61.5Q295 61.5 294.6 61.7Q294.2 61.8 294.1 62.1Q293.9 62.3 293.9 62.7Q293.9 63.1 294.1 63.3Q294.4 63.5 294.8 63.7Q295.2 63.8 295.6 63.9Q296.1 64 296.6 64.2Q297.1 64.3 297.5 64.5Q297.9 64.8 298.1 65.1Q298.4 65.5 298.4 66.1Q298.4 66.6 298.1 67.1Q297.7 67.6 297.1 67.9Q296.5 68.2 295.5 68.2ZM305.6 68.1V61.6H303V60.7H309.2V61.6H306.6V68.1ZM314.5 68.1V60.7H317.4Q318.9 60.7 319.7 61.4Q320.5 62 320.5 63.3Q320.5 64.1 320.1 64.6Q319.8 65.2 319.1 65.5Q318.4 65.8 317.4 65.8H315.1L315.6 65.4V68.1ZM319.5 68.1 317.6 65.4H318.7L320.6 68.1ZM315.6 65.5 315.1 64.9H317.4Q318.4 64.9 318.9 64.5Q319.5 64.1 319.5 63.3Q319.5 62.5 318.9 62Q318.4 61.6 317.4 61.6H315.1L315.6 61.1ZM329.5 68.2Q328 68.2 327.2 67.3Q326.4 66.5 326.4 64.9V60.7H327.4V64.9Q327.4 66.1 328 66.7Q328.5 67.2 329.5 67.2Q330.5 67.2 331.1 66.7Q331.6 66.1 331.6 64.9V60.7H332.6V64.9Q332.6 66.5 331.8 67.3Q331 68.2 329.5 68.2ZM342.3 68.2Q341.5 68.2 340.8 67.9Q340.1 67.6 339.5 67.1Q339 66.6 338.7 65.9Q338.4 65.2 338.4 64.4Q338.4 63.6 338.7 62.9Q339 62.2 339.5 61.7Q340.1 61.2 340.8 60.9Q341.5 60.6 342.3 60.6Q343.2 60.6 343.9 60.9Q344.7 61.2 345.2 61.8L344.5 62.4Q344.1 62 343.5 61.8Q343 61.5 342.4 61.5Q341.8 61.5 341.2 61.8Q340.7 62 340.3 62.3Q339.9 62.7 339.7 63.3Q339.5 63.8 339.5 64.4Q339.5 65 339.7 65.5Q339.9 66.1 340.3 66.4Q340.7 66.8 341.2 67Q341.8 67.2 342.4 67.2Q343 67.2 343.5 67Q344.1 66.8 344.5 66.4L345.2 67Q344.7 67.6 343.9 67.9Q343.2 68.2 342.3 68.2ZM352.3 68.1V61.6H349.7V60.7H355.8V61.6H353.3V68.1ZM361.2 68.1V60.7H362.3V68.1ZM370.8 68.1 367.6 60.7H368.7L371.7 67.5H371.1L374.1 60.7H375.1L371.9 68.1ZM383.8 68.2Q382.9 68.2 382.2 67.9Q381.5 67.6 381 67.1Q380.4 66.6 380.1 65.9Q379.8 65.2 379.8 64.4Q379.8 63.6 380.1 62.9Q380.4 62.2 381 61.7Q381.5 61.2 382.2 60.9Q382.9 60.6 383.8 60.6Q384.6 60.6 385.3 60.9Q386.1 61.2 386.6 61.7Q387.1 62.2 387.4 62.9Q387.7 63.6 387.7 64.4Q387.7 65.2 387.4 65.9Q387.1 66.6 386.6 67.1Q386.1 67.6 385.3 67.9Q384.6 68.2 383.8 68.2ZM383.8 67.2Q384.4 67.2 384.9 67Q385.4 66.8 385.8 66.4Q386.2 66 386.4 65.5Q386.7 65 386.7 64.4Q386.7 63.8 386.4 63.3Q386.2 62.7 385.8 62.3Q385.4 62 384.9 61.8Q384.4 61.5 383.8 61.5Q383.2 61.5 382.6 61.8Q382.1 62 381.7 62.3Q381.3 62.7 381.1 63.3Q380.9 63.8 380.9 64.4Q380.9 65 381.1 65.5Q381.3 66 381.7 66.4Q382.1 66.8 382.6 67Q383.2 67.2 383.8 67.2Z"/></svg></div>
+</div>
+
+<!-- ============================================================
+     ENCABEZADO
+     ============================================================ -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="../" class="brand" aria-label="Dr. Néstor García, inicio">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 290 243" role="img" aria-label="Imagotipo NG"><g transform="translate(-4.75 0) scale(2.38)"><g fill="#161616"><path d="M15.8 25 C 16.4 50, 16.4 75, 15.4 90 L 19.8 90 C 18.8 75, 18.8 50, 19.4 25 Z"/><path d="M5 23 H 22.6 L 19.4 27 C 17 25, 11 23.8, 5 23 Z"/><path d="M10.6 93.4 C 13.4 92.6, 15 91.2, 15.4 88.6 L 19.8 88.6 C 20.2 91.2, 21.8 92.6, 24.6 93.4 Z"/><path d="M17.4 23 L 23.4 23 C 31 30, 40.6 44, 50.6 56 L 46.6 59.6 C 36 46, 26.4 32, 17.4 23 Z"/><path d="M52 66 C 58 76, 66 86, 76 91 C 88 96, 104 94, 112 84 C 116 78, 118 72, 119 66 L 116.4 66 C 115 74, 110 82, 98 87 C 86 90.5, 74 85, 64 77 C 59 72.6, 55 69, 52 66 Z"/><path d="M95 64.4 H122 V66.4 H95 Z"/><path d="M77 27.8 C 90 25, 106 28, 114 40 L 114 47 L 112.8 47 C 110 38, 100 30.6, 86 29.6 C 82 29.4, 79 29, 77 27.8 Z"/></g><g fill="#C8611E"><path d="M57 2 C 52 9, 49 15, 51 22 C 53 29, 60 33, 59 42 C 58 50, 50 56, 46 64 C 43 71, 45 80, 51 87 C 47 80, 46.4 72, 48.6 66 C 51.6 58, 60.6 51, 61 42 C 61.4 33, 54 28, 52.6 21.6 C 51.6 15, 54 8, 57 2 Z"/><path d="M58.6 13 C 60 17, 64 19, 70 21.4 C 76 24, 77 28.4, 75 32 C 73 35.6, 68 37, 67.6 41 C 67 46, 74 50, 78 56 C 82 63, 81 72, 76 80 C 74 83.4, 72 86, 70 88.6 C 73 85, 75 82, 77 78 C 80 71, 80 63.4, 76.4 57 C 72.4 51, 65.4 47, 66 41 C 66.4 36, 71.6 34.4, 73.4 31 C 75 27.6, 73.6 24.4, 68.6 22.4 C 63 20.4, 59.4 18, 58.6 13 Z"/><path d="M64.4 90 C 63 93, 61.6 96, 60.6 100 C 62.4 97, 64 94, 66 90.6 Z"/></g></g></svg>
+      <span class="b-txt"><span class="b-name">DR. NÉSTOR GARCÍA</span><span class="b-sub">CIRUJANO PLÁSTICO Y RECONSTRUCTIVO</span></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Menú principal">
+      <a href="../" data-nav="inicio">Inicio</a>
+      <a href="../sobre-mi/" data-nav="doctor">Sobre mí</a>
+      <div class="has-dd">
+        <button class="dd" type="button" aria-haspopup="true">Procedimientos</button>
+        <div class="dd-menu">
+          <a href="../lipoescultura/">Lipoescultura, abdominoplastia y mommy makeover</a>
+          <a href="../aumento-de-busto/">Aumento y levantamiento de busto</a>
+          <a href="../botox-y-rellenos/">Bótox y rellenos</a>
+        </div>
+      </div>
+      <a href="../preguntas-frecuentes/" data-nav="preguntas" class="active" aria-current="page">Preguntas frecuentes</a>
+      <a href="../contacto/" data-nav="contacto">Contacto</a>
+      <a class="btn js-wa" href="#" data-msg="Hola, Dr. García. Me gustaría agendar una valoración.">Agenda tu valoración</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="view on" data-view="preguntas">
+  <div class="page-hero page-hero--rev" style="min-height:64svh">
+    <div class="ph-txt">
+      <div class="kicker">Resuelvo tus dudas</div>
+      <h1>Preguntas frecuentes</h1>
+      <p class="lead">Lo que más me preguntan antes de una valoración. Si tu duda no está aquí, escríbeme.</p>
+    </div>
+    <div class="ph-img"><img src="../img/faq.webp" srcset="../img/faq-800.webp 800w, ../img/faq.webp 1536w" sizes="(max-width:1180px) 100vw, 50vw" alt="El doctor responde mensajes desde su escritorio" style="object-position:30% 40%" width="1536" height="1024"></div>
+  </div>
+
+  <section class="sec">
+    <div class="wrap" style="max-width:980px">
+      <div class="faq-group reveal">
+        <h2>Antes de tu procedimiento</h2>
+        <div class="faq">
+          <details><summary>¿Qué es la valoración y cómo la agendo?</summary><div class="ans">Es una consulta conmigo para revisar tu caso, resolver tus dudas y definir un plan. Puedes agendarla por WhatsApp o dejando tus datos en el formulario.</div></details>
+          <details><summary>¿Necesito estudios previos?</summary><div class="ans">Para cirugía, sí. Te indico los estudios de laboratorio necesarios para operar con seguridad.</div></details>
+          <details><summary>¿Cuáles son las formas de pago?</summary><div class="ans">Acepto efectivo, transferencia electrónica y tarjeta de crédito a meses sin intereses. Pregúntame por los plazos disponibles al agendar.</div></details>
+        </div>
+      </div>
+      <div class="faq-group reveal">
+        <h2>El procedimiento</h2>
+        <div class="faq">
+          <details><summary>¿Qué tipo de anestesia se usa?</summary><div class="ans">Depende del procedimiento. La aplica un anestesiólogo especialista, que te explica todo antes de la cirugía.</div></details>
+          <details><summary>¿Dónde se realiza la cirugía?</summary><div class="ans">En instalaciones hospitalarias equipadas para cirugía. Te doy todos los detalles en tu valoración.</div></details>
+        </div>
+      </div>
+      <div class="faq-group reveal">
+        <h2>La recuperación</h2>
+        <div class="faq">
+          <details><summary>¿Cuánto dura la recuperación?</summary><div class="ans">Varía según el procedimiento. Muchas pacientes regresan a actividades ligeras en pocas semanas. En tu valoración recibes tiempos exactos para tu caso y tu tipo de trabajo.</div></details>
+          <details><summary>¿Duele mucho?</summary><div class="ans">Es normal sentir molestia los primeros días, que se controla bien con el medicamento indicado.</div></details>
+          <details><summary>¿Cuándo puedo volver al gimnasio?</summary><div class="ans">El ejercicio ligero se retoma primero y el intenso más adelante. Yo te lo indico según tu evolución.</div></details>
+        </div>
+      </div>
+      <div class="faq-group reveal">
+        <h2>Pacientes de fuera de León</h2>
+        <div class="faq">
+          <details><summary>¿Atiende pacientes de otras ciudades?</summary><div class="ans">Sí. Atiendo pacientes de San Francisco del Rincón, Irapuato, Silao y otras ciudades. Te ayudo a organizar tus citas para que hagas el menor número de viajes posible.</div></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec--arena">
+    <div class="wrap"><div class="form-slot" data-title="¿Tienes otra pregunta?"></div></div>
+  </section>
+</section>
+
+</main>
+
+<!-- ============================================================
+     PIE DE PÁGINA
+     ============================================================ -->
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-grid">
+      <div class="ftr-logo"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 408.24 334.6" role="img" aria-label="Dr. Néstor García"><g transform="translate(54.37 0) scale(2.38)"><g fill="#FFFFFF"><path d="M15.8 25 C 16.4 50, 16.4 75, 15.4 90 L 19.8 90 C 18.8 75, 18.8 50, 19.4 25 Z"/><path d="M5 23 H 22.6 L 19.4 27 C 17 25, 11 23.8, 5 23 Z"/><path d="M10.6 93.4 C 13.4 92.6, 15 91.2, 15.4 88.6 L 19.8 88.6 C 20.2 91.2, 21.8 92.6, 24.6 93.4 Z"/><path d="M17.4 23 L 23.4 23 C 31 30, 40.6 44, 50.6 56 L 46.6 59.6 C 36 46, 26.4 32, 17.4 23 Z"/><path d="M52 66 C 58 76, 66 86, 76 91 C 88 96, 104 94, 112 84 C 116 78, 118 72, 119 66 L 116.4 66 C 115 74, 110 82, 98 87 C 86 90.5, 74 85, 64 77 C 59 72.6, 55 69, 52 66 Z"/><path d="M95 64.4 H122 V66.4 H95 Z"/><path d="M77 27.8 C 90 25, 106 28, 114 40 L 114 47 L 112.8 47 C 110 38, 100 30.6, 86 29.6 C 82 29.4, 79 29, 77 27.8 Z"/></g><g fill="#C8611E"><path d="M57 2 C 52 9, 49 15, 51 22 C 53 29, 60 33, 59 42 C 58 50, 50 56, 46 64 C 43 71, 45 80, 51 87 C 47 80, 46.4 72, 48.6 66 C 51.6 58, 60.6 51, 61 42 C 61.4 33, 54 28, 52.6 21.6 C 51.6 15, 54 8, 57 2 Z"/><path d="M58.6 13 C 60 17, 64 19, 70 21.4 C 76 24, 77 28.4, 75 32 C 73 35.6, 68 37, 67.6 41 C 67 46, 74 50, 78 56 C 82 63, 81 72, 76 80 C 74 83.4, 72 86, 70 88.6 C 73 85, 75 82, 77 78 C 80 71, 80 63.4, 76.4 57 C 72.4 51, 65.4 47, 66 41 C 66.4 36, 71.6 34.4, 73.4 31 C 75 27.6, 73.6 24.4, 68.6 22.4 C 63 20.4, 59.4 18, 58.6 13 Z"/><path d="M64.4 90 C 63 93, 61.6 96, 60.6 100 C 62.4 97, 64 94, 66 90.6 Z"/></g></g><path fill="#FFFFFF" d="M6 271.4Q6 273.3 5.9 275Q5.9 275.8 5.9 276.6Q5.9 277.3 5.9 278.1Q5.9 278.8 5.9 279.5Q5.9 280.2 5.9 280.8Q5.9 281.9 5.9 283.4Q5.9 285 5.9 286.7Q6 288.3 6 289.9Q6.1 291.4 6.1 292.4Q6.4 292.4 6.7 292.5Q7.1 292.5 7.6 292.6Q8 292.6 8.4 292.6Q8.8 292.6 9.1 292.6Q10.3 292.6 11.5 292.5Q12.7 292.3 13.9 291.9Q15 291.4 16 290.7Q17.0 289.9 17.8 288.7Q18.5 287.5 18.9 285.8Q19.4 284.2 19.4 281.9Q19.4 279.3 18.8 277.3Q18.1 275.4 17 274Q15.8 272.6 14 271.9Q12.3 271.2 10 271.2Q9.5 271.2 9 271.3Q8.4 271.3 7.9 271.3Q7.3 271.3 6.8 271.4Q6.3 271.4 6 271.4ZM2.4 269.9Q2.8 269.9 3.1 270Q3.4 270 3.7 270Q4 270 4.2 270Q4.5 270 5.2 270Q5.9 269.9 6.9 269.9Q7.8 269.9 8.9 269.8Q9.9 269.8 10.8 269.8Q13.2 269.8 15.4 270.4Q17.5 271 19.2 272.4Q20.8 273.7 21.8 275.9Q22.7 278.1 22.7 281.4Q22.7 283.7 22.2 285.5Q21.7 287.3 20.8 288.8Q19.9 290.2 18.6 291.2Q17.4 292.2 15.8 292.8Q14.3 293.5 12.6 293.8Q10.8 294.1 8.9 294.1Q8.3 294.1 7.3 294Q6.4 294 5.5 293.9Q4.5 293.9 3.7 293.8Q2.8 293.8 2.4 293.8V293.7Q2.5 293.4 2.6 292.9Q2.7 292.4 2.7 291.6Q2.8 290.8 2.8 289.8Q2.9 288.7 2.9 287.3V276.5Q2.9 275.1 2.8 274Q2.8 273 2.7 272.2Q2.7 271.4 2.6 270.9Q2.5 270.3 2.4 270ZM35.6 287.3Q35.6 288.7 35.7 289.8Q35.7 290.8 35.8 291.6Q35.8 292.4 35.9 292.9Q36 293.4 36.1 293.7V293.8H32.1V293.7Q32.2 293.4 32.3 292.9Q32.4 292.4 32.5 291.6Q32.5 290.8 32.6 289.8Q32.6 288.7 32.6 287.3V276.5Q32.6 275.1 32.6 274Q32.5 273 32.5 272.2Q32.4 271.5 32.3 270.9Q32.2 270.4 32.1 270.1V270L32.8 270.1Q33.2 270.1 33.5 270.1Q33.9 270.1 34.4 270.1Q35 270.1 36.1 270Q37.2 269.8 38.9 269.8Q40.5 269.8 41.9 270.2Q43.2 270.7 44.2 271.5Q45.2 272.3 45.8 273.5Q46.3 274.7 46.3 276.3Q46.3 277.5 46 278.5Q45.7 279.5 45.2 280.3Q44.6 281.2 43.8 281.8Q43 282.4 42.1 282.9L47.9 291Q48.3 291.7 48.7 292.1Q49.1 292.6 49.4 292.9Q49.8 293.2 50.1 293.4Q50.4 293.6 50.7 293.7V293.8H45.9Q45.9 293.5 45.6 293Q45.3 292.4 45 291.9L39.1 283.6Q38.7 283.7 38.3 283.7Q37.9 283.7 37.5 283.7Q37.1 283.7 36.6 283.7Q36.1 283.7 35.6 283.6ZM35.6 282.3Q36.1 282.4 36.6 282.4Q37 282.5 37.5 282.5Q38.7 282.5 39.7 282.1Q40.8 281.7 41.5 281Q42.2 280.2 42.6 279.1Q43 277.9 43 276.4Q43 275.1 42.7 274.1Q42.4 273.1 41.9 272.4Q41.3 271.7 40.5 271.3Q39.6 270.9 38.5 270.9Q37.4 270.9 36.7 271Q36 271.2 35.6 271.3ZM57.1 292.3Q57.1 292 57.2 291.7Q57.3 291.3 57.6 291.1Q57.8 290.8 58.1 290.7Q58.5 290.6 58.8 290.6Q59.2 290.6 59.5 290.7Q59.9 290.8 60.1 291.1Q60.3 291.3 60.5 291.7Q60.6 292 60.6 292.3Q60.6 293.1 60.1 293.6Q59.6 294.1 58.8 294.1Q58.5 294.1 58.1 294Q57.8 293.9 57.6 293.6Q57.3 293.4 57.2 293Q57.1 292.7 57.1 292.3ZM86.8 270 103.9 288.2V276.5Q103.9 275.1 103.9 274Q103.9 273 103.8 272.2Q103.7 271.4 103.6 270.9Q103.5 270.4 103.4 270.1V270H106.4V270.1Q106.3 270.4 106.2 270.9Q106.1 271.4 106.1 272.2Q106 273 106 274Q105.9 275.1 105.9 276.5V294.1H105.4L88.3 276V287.3Q88.3 288.7 88.3 289.8Q88.3 290.8 88.4 291.6Q88.5 292.4 88.5 292.9Q88.6 293.4 88.7 293.7V293.8H85.8V293.7Q85.9 293.4 86 292.9Q86 292.4 86.1 291.6Q86.2 290.8 86.2 289.8Q86.2 288.7 86.2 287.3V276.5Q86.2 275.1 86.2 274Q86.2 273 86.1 272.2Q86 271.4 86 270.9Q85.9 270.4 85.8 270.1V270ZM116.5 270Q118.6 270 120.6 270Q122.7 270 124.4 269.9Q126.1 269.9 127.3 269.9Q128.5 269.8 129 269.7L128.2 271.9Q127.6 271.8 126.9 271.7Q126.2 271.6 125.3 271.5Q124.4 271.4 123.3 271.4Q122.9 271.4 122.3 271.4Q121.7 271.4 121.2 271.5Q120.6 271.5 120 271.5V280.6Q121.7 280.6 123.1 280.5Q124.5 280.4 125.4 280.3Q126.6 280.2 127.4 280.1L126.9 282.5Q125.8 282.4 124.6 282.2Q123.6 282.1 122.3 282Q121.1 281.9 120 281.9V292.3Q122 292.3 123.6 292.2Q125.3 292 126.5 291.8Q127.9 291.6 129.1 291.2L128.6 293.9Q128.4 293.9 128 293.9Q127.6 293.9 127.1 293.9Q126.6 293.9 126.1 293.8Q125.6 293.8 125.1 293.8Q124.6 293.8 124.2 293.8Q123.9 293.8 123.7 293.8H116.5V293.7Q116.6 293.4 116.7 292.9Q116.8 292.4 116.9 291.6Q116.9 290.8 117 289.8Q117 288.7 117 287.3V276.5Q117 275.1 117 274Q116.9 273 116.9 272.2Q116.8 271.4 116.7 270.9Q116.6 270.4 116.5 270.1V270ZM127 265.1Q125.8 265.5 124.5 265.9Q124 266.1 123.4 266.4Q122.8 266.6 122.1 266.9Q121.5 267.1 120.9 267.4Q120.3 267.7 119.7 268L119.4 267.4Q120.4 266.7 121.5 265.8Q122.6 265 123.5 264.2Q124.5 263.4 125.5 262.5ZM148.6 273.8H148.2Q148.1 273.4 147.8 272.9Q147.5 272.4 147.1 272Q146.6 271.6 145.9 271.3Q145.2 271 144.3 271Q143.5 271 142.9 271.3Q142.3 271.5 141.8 272Q141.4 272.4 141.2 273Q141 273.6 141 274.4Q141 275.6 141.6 276.7Q142.3 277.8 143.3 278.8Q144.3 279.9 145.5 281Q146.7 282 147.7 283.2Q148.7 284.3 149.4 285.6Q150.1 286.8 150.1 288.3Q150.1 289.3 149.7 290.4Q149.3 291.5 148.5 292.4Q147.8 293.2 146.5 293.8Q145.3 294.3 143.6 294.3Q142.7 294.3 141.8 294.1Q141 294 140.2 293.7Q139.5 293.5 138.9 293.2Q138.4 292.9 138 292.6L138.4 288.9H138.8Q139 289.7 139.4 290.4Q139.8 291.1 140.4 291.7Q141 292.2 141.8 292.5Q142.6 292.9 143.5 292.9Q144.4 292.9 145 292.6Q145.7 292.3 146.2 291.9Q146.7 291.4 146.9 290.8Q147.2 290.2 147.2 289.4Q147.2 288.4 146.8 287.5Q146.4 286.6 145.8 285.8Q145.2 285 144.4 284.3Q143.6 283.5 142.8 282.8Q141.9 282.0 141.2 281.2Q140.4 280.4 139.7 279.5Q139.1 278.6 138.7 277.6Q138.4 276.5 138.4 275.3Q138.4 274 138.9 272.9Q139.4 271.9 140.2 271.1Q141 270.4 142.1 270Q143.2 269.6 144.3 269.6Q145.1 269.6 145.8 269.7Q146.5 269.8 147.1 270Q147.6 270.2 148 270.4Q148.5 270.6 148.7 270.7ZM165.9 271.5Q164 271.5 162.4 271.6Q160.8 271.8 159.7 272Q158.3 272.3 157.3 272.6L157.8 269.9Q158 269.9 158.4 269.9Q158.8 269.9 159.3 269.9Q159.7 269.9 160.3 270Q160.8 270 161.3 270Q161.8 270 162.2 270Q162.5 270 162.7 270H172.2Q172.3 270 172.7 270Q173.1 270 173.6 270Q174.1 270 174.6 270Q175.1 269.9 175.6 269.9Q176.1 269.9 176.5 269.9Q176.9 269.9 177.1 269.9L177.6 272.6Q176.5 272.3 175.2 272Q174.1 271.8 172.5 271.6Q170.9 271.5 168.9 271.5V287.3Q168.9 288.7 169 289.8Q169 290.8 169.1 291.6Q169.1 292.4 169.2 292.9Q169.3 293.4 169.4 293.7V293.8H165.5V293.7Q165.6 293.4 165.6 292.9Q165.7 292.4 165.8 291.6Q165.9 290.8 165.9 289.8Q165.9 288.7 165.9 287.3ZM196.3 269.6Q199.1 269.6 201.4 270.5Q203.8 271.4 205.5 273Q207.2 274.7 208.2 277Q209.1 279.3 209.1 282Q209.1 283.6 208.8 285.1Q208.4 286.7 207.7 288Q207 289.4 206 290.5Q204.9 291.7 203.6 292.5Q202.3 293.4 200.7 293.8Q199.1 294.3 197.3 294.3Q194.5 294.3 192.1 293.4Q189.8 292.5 188.1 290.9Q186.4 289.3 185.4 287Q184.4 284.7 184.4 281.9Q184.4 280.4 184.8 278.8Q185.2 277.3 185.9 275.9Q186.6 274.5 187.6 273.4Q188.6 272.2 190 271.4Q191.3 270.5 192.9 270.1Q194.5 269.6 196.3 269.6ZM197.3 292.8Q199.1 292.8 200.6 292.2Q202.2 291.5 203.3 290.2Q204.4 289 205 287.2Q205.6 285.3 205.6 283Q205.6 280.5 205 278.3Q204.4 276.1 203.3 274.5Q202.1 272.9 200.4 272Q198.6 271.1 196.3 271.1Q194.5 271.1 192.9 271.7Q191.4 272.4 190.3 273.6Q189.2 274.9 188.6 276.7Q188 278.5 188 280.8Q188 283.4 188.6 285.6Q189.1 287.8 190.3 289.4Q191.5 291 193.2 291.9Q195 292.8 197.3 292.8ZM221.9 287.3Q221.9 288.7 221.9 289.8Q222 290.8 222 291.6Q222.1 292.4 222.2 292.9Q222.3 293.4 222.4 293.7V293.8H218.4V293.7Q218.5 293.4 218.6 292.9Q218.7 292.4 218.7 291.6Q218.8 290.8 218.8 289.8Q218.9 288.7 218.9 287.3V276.5Q218.9 275.1 218.8 274Q218.8 273 218.7 272.2Q218.7 271.5 218.6 270.9Q218.5 270.4 218.4 270.1V270L219.1 270.1Q219.4 270.1 219.8 270.1Q220.2 270.1 220.6 270.1Q221.2 270.1 222.3 270Q223.4 269.8 225.1 269.8Q226.7 269.8 228.1 270.2Q229.4 270.7 230.4 271.5Q231.4 272.3 232 273.5Q232.5 274.7 232.5 276.3Q232.5 277.5 232.2 278.5Q231.9 279.5 231.4 280.3Q230.8 281.2 230 281.8Q229.3 282.4 228.3 282.9L234.1 291Q234.6 291.7 234.9 292.1Q235.3 292.6 235.6 292.9Q236 293.2 236.3 293.4Q236.6 293.6 236.9 293.7V293.8H232.2Q232.1 293.5 231.8 293Q231.6 292.4 231.2 291.9L225.3 283.6Q224.9 283.7 224.5 283.7Q224.2 283.7 223.8 283.7Q223.3 283.7 222.8 283.7Q222.4 283.7 221.9 283.6ZM221.9 282.3Q222.3 282.4 222.8 282.4Q223.3 282.5 223.7 282.5Q224.9 282.5 226 282.1Q227 281.7 227.7 281Q228.4 280.2 228.8 279.1Q229.2 277.9 229.2 276.4Q229.2 275.1 228.9 274.1Q228.7 273.1 228.1 272.4Q227.6 271.7 226.7 271.3Q225.9 270.9 224.7 270.9Q223.6 270.9 222.9 271Q222.2 271.2 221.9 271.3ZM280.6 291Q280.6 291.2 280.6 291.4Q280.5 291.6 280.4 291.7Q279.6 292.3 278.8 292.8Q277.9 293.2 276.9 293.6Q275.9 293.9 274.7 294.1Q273.5 294.3 272.2 294.3Q269.1 294.3 266.7 293.4Q264.2 292.5 262.4 290.9Q260.6 289.3 259.6 287Q258.6 284.7 258.6 281.9Q258.6 280.4 259 278.8Q259.5 277.3 260.2 275.9Q261 274.5 262.2 273.4Q263.3 272.2 264.8 271.4Q266.2 270.5 268 270.1Q269.8 269.6 271.8 269.6Q272.6 269.6 273.5 269.7Q274.3 269.7 275.1 269.9Q275.9 270 276.7 270.2Q277.4 270.4 278.1 270.7L279.2 273.7L279.1 273.8Q278.5 273.2 277.6 272.7Q276.8 272.2 275.8 271.9Q274.8 271.5 273.8 271.3Q272.7 271.1 271.7 271.1Q269.6 271.1 267.8 271.7Q266.1 272.4 264.8 273.6Q263.6 274.9 262.9 276.7Q262.2 278.5 262.2 280.8Q262.2 283.4 262.8 285.5Q263.5 287.7 264.8 289.3Q266.1 290.9 268.1 291.8Q270.1 292.7 272.7 292.7Q273.8 292.7 274.8 292.5Q275.7 292.3 276.3 292.1Q276.9 291.8 277.3 291.5Q277.6 291.1 277.6 290.9V290.2Q277.6 289.1 277.5 288.2Q277.5 287.4 277.4 286.8Q277.4 286.1 277.3 285.7Q277.2 285.2 277.1 284.9V284.8H281.1V284.9Q281 285.2 280.9 285.7Q280.8 286.2 280.7 286.8Q280.7 287.4 280.6 288.3Q280.6 289.2 280.6 290.3ZM306.9 293.8V293.7Q306.9 293.7 306.9 293.5Q306.9 293.3 306.9 293.2Q306.9 292.7 306.8 292.1Q306.6 291.4 306.2 290.5L304.2 286Q303.3 286 301.8 286Q300.2 286 298.4 286Q297.1 286 295.9 286Q294.7 286 293.7 286L291.8 290.4Q291.5 291 291.2 291.7Q291 292.4 291 293.2Q291 293.4 291 293.5Q291 293.7 291.1 293.7V293.8H287.7V293.7Q288 293.4 288.4 292.6Q288.9 291.8 289.4 290.6L298.9 269.5H300.2L309.3 289.8Q309.6 290.5 309.9 291.2Q310.3 291.8 310.6 292.4Q310.9 292.9 311.1 293.3Q311.3 293.6 311.4 293.7V293.8ZM296.1 284.5Q297.1 284.5 298.1 284.5Q299.1 284.5 300.1 284.5Q301 284.5 301.9 284.5Q302.8 284.5 303.6 284.5L298.9 273.9L294.3 284.5ZM322.4 287.3Q322.4 288.7 322.5 289.8Q322.5 290.8 322.6 291.6Q322.6 292.4 322.7 292.9Q322.8 293.4 322.9 293.7V293.8H318.9V293.7Q319 293.4 319.1 292.9Q319.2 292.4 319.3 291.6Q319.3 290.8 319.4 289.8Q319.4 288.7 319.4 287.3V276.5Q319.4 275.1 319.4 274Q319.3 273 319.3 272.2Q319.2 271.5 319.1 270.9Q319 270.4 318.9 270.1V270L319.6 270.1Q320 270.1 320.3 270.1Q320.7 270.1 321.2 270.1Q321.8 270.1 322.9 270Q324 269.8 325.7 269.8Q327.3 269.8 328.7 270.2Q330 270.7 331 271.5Q332 272.3 332.6 273.5Q333.1 274.7 333.1 276.3Q333.1 277.5 332.8 278.5Q332.5 279.5 332 280.3Q331.4 281.2 330.6 281.8Q329.8 282.4 328.9 282.9L334.7 291Q335.1 291.7 335.5 292.1Q335.9 292.6 336.2 292.9Q336.6 293.2 336.9 293.4Q337.2 293.6 337.5 293.7V293.8H332.7Q332.7 293.5 332.4 293Q332.1 292.4 331.8 291.9L325.9 283.6Q325.5 283.7 325.1 283.7Q324.7 283.7 324.3 283.7Q323.9 283.7 323.4 283.7Q322.9 283.7 322.4 283.6ZM322.4 282.3Q322.9 282.4 323.4 282.4Q323.8 282.5 324.3 282.5Q325.5 282.5 326.5 282.1Q327.6 281.7 328.3 281Q329 280.2 329.4 279.1Q329.8 277.9 329.8 276.4Q329.8 275.1 329.5 274.1Q329.2 273.1 328.7 272.4Q328.1 271.7 327.3 271.3Q326.4 270.9 325.3 270.9Q324.2 270.9 323.5 271Q322.8 271.2 322.4 271.3ZM363.8 273.6 363.6 273.7Q362.3 272.5 360.5 271.8Q358.7 271.1 356.5 271.1Q354.4 271.1 352.7 271.7Q351 272.4 349.7 273.6Q348.5 274.9 347.8 276.7Q347.1 278.5 347.1 280.8Q347.1 283.4 347.7 285.6Q348.4 287.8 349.7 289.4Q351 291 353 291.9Q354.9 292.8 357.6 292.8Q358.5 292.8 359.5 292.6Q360.4 292.4 361.3 292Q362.1 291.6 362.9 291.1Q363.7 290.5 364.3 289.8L364.5 289.9L363.2 293.3Q361.9 293.8 360.4 294.1Q358.9 294.3 357.4 294.3Q354.3 294.3 351.8 293.4Q349.2 292.5 347.4 290.9Q345.6 289.3 344.5 287Q343.5 284.7 343.5 281.9Q343.5 280.4 343.9 278.8Q344.3 277.3 345.1 275.9Q345.9 274.5 347 273.4Q348.2 272.2 349.7 271.4Q351.1 270.5 352.9 270.1Q354.7 269.6 356.7 269.6Q359.9 269.6 362.7 270.6ZM373.2 293.7Q373.3 293.4 373.4 292.9Q373.5 292.4 373.5 291.6Q373.6 290.8 373.6 289.8Q373.7 288.7 373.7 287.3V276.5Q373.7 275.1 373.6 274Q373.6 273 373.5 272.2Q373.5 271.4 373.4 270.9Q373.3 270.4 373.2 270.1V270H377.2V270.1Q377.1 270.4 377 270.9Q376.9 271.4 376.8 272.2Q376.8 273 376.7 274Q376.7 275.1 376.7 276.5V287.3Q376.7 288.7 376.7 289.8Q376.8 290.8 376.8 291.6Q376.9 292.4 377 292.9Q377.1 293.4 377.2 293.7V293.8H373.2ZM379.7 265.1Q378.5 265.5 377.2 265.9Q376.6 266.1 376 266.4Q375.5 266.6 374.8 266.9Q374.2 267.1 373.6 267.4Q373 267.7 372.4 268L372 267.4Q373.1 266.7 374.2 265.8Q375.3 265 376.2 264.2Q377.2 263.4 378.2 262.5ZM404 293.8V293.7Q404.1 293.7 404.1 293.5Q404.1 293.3 404.1 293.2Q404.1 292.7 404 292.1Q403.8 291.4 403.4 290.5L401.4 286Q400.5 286 398.9 286Q397.4 286 395.6 286Q394.3 286 393.1 286Q391.8 286 390.9 286L389 290.4Q388.7 291 388.4 291.7Q388.1 292.4 388.1 293.2Q388.1 293.4 388.2 293.5Q388.2 293.7 388.2 293.7V293.8H384.9V293.7Q385.2 293.4 385.6 292.6Q386 291.8 386.6 290.6L396.1 269.5H397.4L406.4 289.8Q406.8 290.5 407.1 291.2Q407.4 291.8 407.7 292.4Q408 292.9 408.3 293.3Q408.5 293.6 408.6 293.7V293.8ZM393.3 284.5Q394.2 284.5 395.2 284.5Q396.3 284.5 397.2 284.5Q398.2 284.5 399.1 284.5Q400 284.5 400.7 284.5L396.1 273.9L391.5 284.5Z"/><rect x="184.12" y="311" width="40" height="1" fill="#C8611E"/><path fill="#C9C2BC" d="M24.4 333.2Q23.6 333.2 22.9 332.9Q22.2 332.6 21.6 332.1Q21.1 331.6 20.8 330.9Q20.5 330.2 20.5 329.4Q20.5 328.6 20.8 327.9Q21.1 327.2 21.7 326.7Q22.2 326.2 22.9 325.9Q23.6 325.6 24.5 325.6Q25.3 325.6 26 325.9Q26.8 326.2 27.3 326.8L26.6 327.4Q26.2 327 25.6 326.8Q25.1 326.5 24.5 326.5Q23.9 326.5 23.3 326.8Q22.8 327 22.4 327.3Q22 327.7 21.8 328.3Q21.6 328.8 21.6 329.4Q21.6 330 21.8 330.5Q22 331.1 22.4 331.4Q22.8 331.8 23.3 332Q23.9 332.2 24.5 332.2Q25.1 332.2 25.6 332Q26.2 331.8 26.6 331.4L27.3 332Q26.8 332.6 26 332.9Q25.3 333.2 24.4 333.2ZM32.9 333.1V325.7H33.9V333.1ZM40.4 333.1V325.7H43.3Q44.7 325.7 45.5 326.4Q46.4 327 46.4 328.3Q46.4 329.1 46 329.6Q45.6 330.2 44.9 330.5Q44.2 330.8 43.3 330.8H41L41.4 330.4V333.1ZM45.3 333.1 43.4 330.4H44.6L46.5 333.1ZM41.4 330.5 41 329.9H43.2Q44.3 329.9 44.8 329.5Q45.3 329.1 45.3 328.3Q45.3 327.5 44.8 327Q44.3 326.6 43.2 326.6H41L41.4 326.1ZM55.4 333.2Q53.9 333.2 53.1 332.3Q52.2 331.5 52.2 329.9V325.7H53.3V329.9Q53.3 331.1 53.8 331.7Q54.4 332.2 55.4 332.2Q56.4 332.2 56.9 331.7Q57.5 331.1 57.5 329.9V325.7H58.5V329.9Q58.5 331.5 57.7 332.3Q56.8 333.2 55.4 333.2ZM65.8 333.2Q65.2 333.2 64.6 332.9Q64 332.6 63.7 332.1L64.3 331.4Q64.6 331.8 65 332Q65.4 332.3 65.8 332.3Q67.1 332.3 67.1 330.8V326.6H64.4V325.7H68.1V330.7Q68.1 332 67.6 332.6Q67 333.2 65.8 333.2ZM73.4 333.1 76.7 325.7H77.8L81.2 333.1H80L77 326.3H77.5L74.5 333.1ZM74.8 331.2 75.1 330.4H79.3L79.6 331.2ZM86.5 333.1V325.7H87.3L92.2 331.8H91.8V325.7H92.8V333.1H92L87.1 327H87.5V333.1ZM102.6 333.2Q101.8 333.2 101 332.9Q100.3 332.6 99.8 332.1Q99.3 331.6 99 330.9Q98.7 330.2 98.7 329.4Q98.7 328.6 99 327.9Q99.3 327.2 99.8 326.7Q100.3 326.2 101 325.9Q101.8 325.6 102.6 325.6Q103.5 325.6 104.2 325.9Q104.9 326.2 105.4 326.7Q106 327.2 106.3 327.9Q106.6 328.6 106.6 329.4Q106.6 330.2 106.3 330.9Q106 331.6 105.4 332.1Q104.9 332.6 104.2 332.9Q103.5 333.2 102.6 333.2ZM102.6 332.2Q103.2 332.2 103.8 332Q104.3 331.8 104.7 331.4Q105.1 331 105.3 330.5Q105.5 330 105.5 329.4Q105.5 328.8 105.3 328.3Q105.1 327.7 104.7 327.3Q104.3 327 103.8 326.8Q103.2 326.5 102.6 326.5Q102 326.5 101.5 326.8Q100.9 327 100.6 327.3Q100.2 327.7 99.9 328.3Q99.7 328.8 99.7 329.4Q99.7 330 99.9 330.5Q100.2 331 100.6 331.4Q100.9 331.8 101.5 332Q102 332.2 102.6 332.2ZM119.4 333.1V325.7H122.3Q123.3 325.7 124 326Q124.7 326.3 125 326.9Q125.4 327.5 125.4 328.3Q125.4 329.1 125 329.6Q124.7 330.2 124 330.5Q123.3 330.9 122.3 330.9H120L120.5 330.4V333.1ZM120.5 330.5 120 329.9H122.3Q123.3 329.9 123.8 329.5Q124.4 329.1 124.4 328.3Q124.4 327.5 123.8 327Q123.3 326.6 122.3 326.6H120L120.5 326.1ZM131.3 333.1V325.7H132.3V332.2H136.4V333.1ZM140.7 333.1 144 325.7H145.1L148.4 333.1H147.3L144.3 326.3H144.7L141.7 333.1ZM142.1 331.2 142.4 330.4H146.5L146.9 331.2ZM143.7 325.1 145.2 323.7H146.5L144.7 325.1ZM155.9 333.2Q155 333.2 154.3 332.9Q153.5 332.7 153.1 332.3L153.4 331.4Q153.9 331.8 154.5 332Q155.2 332.3 155.9 332.3Q156.5 332.3 156.9 332.1Q157.3 332 157.5 331.7Q157.7 331.5 157.7 331.1Q157.7 330.8 157.5 330.5Q157.2 330.3 156.8 330.1Q156.4 330 156 329.9Q155.5 329.8 155 329.6Q154.5 329.5 154.1 329.3Q153.7 329.1 153.5 328.7Q153.2 328.3 153.2 327.7Q153.2 327.1 153.5 326.7Q153.8 326.2 154.5 325.9Q155.1 325.6 156.1 325.6Q156.7 325.6 157.4 325.8Q158 325.9 158.5 326.3L158.1 327.1Q157.6 326.8 157.1 326.6Q156.6 326.5 156.1 326.5Q155.5 326.5 155 326.7Q154.6 326.8 154.5 327.1Q154.3 327.3 154.3 327.7Q154.3 328.1 154.5 328.3Q154.8 328.5 155.2 328.7Q155.6 328.8 156 328.9Q156.5 329 157 329.2Q157.5 329.3 157.9 329.5Q158.3 329.8 158.5 330.1Q158.8 330.5 158.8 331.1Q158.8 331.6 158.5 332.1Q158.2 332.6 157.5 332.9Q156.9 333.2 155.9 333.2ZM166 333.1V326.6H163.4V325.7H169.6V326.6H167V333.1ZM174.9 333.1V325.7H176V333.1ZM185.7 333.2Q184.9 333.2 184.2 332.9Q183.5 332.6 182.9 332.1Q182.4 331.6 182.1 330.9Q181.8 330.2 181.8 329.4Q181.8 328.6 182.1 327.9Q182.4 327.2 182.9 326.7Q183.5 326.2 184.2 325.9Q184.9 325.6 185.8 325.6Q186.6 325.6 187.3 325.9Q188.1 326.2 188.6 326.8L187.9 327.4Q187.5 327 186.9 326.8Q186.4 326.5 185.8 326.5Q185.2 326.5 184.6 326.8Q184.1 327 183.7 327.3Q183.3 327.7 183.1 328.3Q182.9 328.8 182.9 329.4Q182.9 330 183.1 330.5Q183.3 331.1 183.7 331.4Q184.1 331.8 184.6 332Q185.2 332.2 185.8 332.2Q186.4 332.2 186.9 332Q187.5 331.8 187.9 331.4L188.6 332Q188.1 332.6 187.3 332.9Q186.6 333.2 185.7 333.2ZM197.5 333.2Q196.7 333.2 196 332.9Q195.2 332.6 194.7 332.1Q194.2 331.6 193.9 330.9Q193.6 330.2 193.6 329.4Q193.6 328.6 193.9 327.9Q194.2 327.2 194.7 326.7Q195.2 326.2 196 325.9Q196.7 325.6 197.5 325.6Q198.4 325.6 199.1 325.9Q199.8 326.2 200.3 326.7Q200.9 327.2 201.2 327.9Q201.5 328.6 201.5 329.4Q201.5 330.2 201.2 330.9Q200.9 331.6 200.3 332.1Q199.8 332.6 199.1 332.9Q198.4 333.2 197.5 333.2ZM197.5 332.2Q198.1 332.2 198.7 332Q199.2 331.8 199.6 331.4Q200 331 200.2 330.5Q200.4 330 200.4 329.4Q200.4 328.8 200.2 328.3Q200 327.7 199.6 327.3Q199.2 327 198.7 326.8Q198.1 326.5 197.5 326.5Q196.9 326.5 196.4 326.8Q195.9 327 195.5 327.3Q195.1 327.7 194.9 328.3Q194.6 328.8 194.6 329.4Q194.6 330 194.9 330.5Q195.1 331 195.5 331.4Q195.9 331.8 196.4 332Q196.9 332.2 197.5 332.2ZM216.1 333.1V330.3L216.4 330.9L213.2 325.7H214.3L217 330.1H216.4L219.1 325.7H220.1L216.9 330.9L217.2 330.3V333.1ZM232.4 333.1V325.7H235.3Q236.8 325.7 237.6 326.4Q238.4 327 238.4 328.3Q238.4 329.1 238.1 329.6Q237.7 330.2 237 330.5Q236.3 330.8 235.3 330.8H233L233.5 330.4V333.1ZM237.4 333.1 235.5 330.4H236.7L238.6 333.1ZM233.5 330.5 233 329.9H235.3Q236.3 329.9 236.9 329.5Q237.4 329.1 237.4 328.3Q237.4 327.5 236.9 327Q236.3 326.6 235.3 326.6H233L233.5 326.1ZM244.4 333.1V325.7H249.6V326.6H245.4V332.2H249.7V333.1ZM245.3 329.8V328.9H249.1V329.8ZM259 333.2Q258.1 333.2 257.4 332.9Q256.7 332.6 256.2 332.1Q255.6 331.6 255.3 330.9Q255.1 330.2 255.1 329.4Q255.1 328.6 255.3 327.9Q255.6 327.2 256.2 326.7Q256.7 326.2 257.4 325.9Q258.1 325.6 259 325.6Q259.8 325.6 260.6 325.9Q261.3 326.2 261.8 326.8L261.1 327.4Q260.7 327 260.2 326.8Q259.6 326.5 259 326.5Q258.4 326.5 257.9 326.8Q257.3 327 256.9 327.3Q256.5 327.7 256.3 328.3Q256.1 328.8 256.1 329.4Q256.1 330 256.3 330.5Q256.5 331.1 256.9 331.4Q257.3 331.8 257.9 332Q258.4 332.2 259 332.2Q259.6 332.2 260.2 332Q260.7 331.8 261.1 331.4L261.8 332Q261.3 332.6 260.6 332.9Q259.8 333.2 259 333.2ZM270.8 333.2Q269.9 333.2 269.2 332.9Q268.5 332.6 267.9 332.1Q267.4 331.6 267.1 330.9Q266.8 330.2 266.8 329.4Q266.8 328.6 267.1 327.9Q267.4 327.2 267.9 326.7Q268.5 326.2 269.2 325.9Q269.9 325.6 270.8 325.6Q271.6 325.6 272.3 325.9Q273 326.2 273.6 326.7Q274.1 327.2 274.4 327.9Q274.7 328.6 274.7 329.4Q274.7 330.2 274.4 330.9Q274.1 331.6 273.6 332.1Q273 332.6 272.3 332.9Q271.6 333.2 270.8 333.2ZM270.8 332.2Q271.4 332.2 271.9 332Q272.4 331.8 272.8 331.4Q273.2 331 273.4 330.5Q273.6 330 273.6 329.4Q273.6 328.8 273.4 328.3Q273.2 327.7 272.8 327.3Q272.4 327 271.9 326.8Q271.4 326.5 270.8 326.5Q270.1 326.5 269.6 326.8Q269.1 327 268.7 327.3Q268.3 327.7 268.1 328.3Q267.9 328.8 267.9 329.4Q267.9 330 268.1 330.5Q268.3 331 268.7 331.4Q269.1 331.8 269.6 332Q270.1 332.2 270.8 332.2ZM280.5 333.1V325.7H281.4L286.3 331.8H285.8V325.7H286.9V333.1H286L281.1 327H281.6V333.1ZM295.5 333.2Q294.6 333.2 293.9 332.9Q293.1 332.7 292.6 332.3L293 331.4Q293.5 331.8 294.1 332Q294.8 332.3 295.5 332.3Q296.1 332.3 296.5 332.1Q296.9 332 297.1 331.7Q297.3 331.5 297.3 331.1Q297.3 330.8 297.1 330.5Q296.8 330.3 296.4 330.1Q296 330 295.6 329.9Q295.1 329.8 294.6 329.6Q294.1 329.5 293.7 329.3Q293.3 329.1 293.1 328.7Q292.8 328.3 292.8 327.7Q292.8 327.1 293.1 326.7Q293.4 326.2 294.1 325.9Q294.7 325.6 295.7 325.6Q296.3 325.6 297 325.8Q297.6 325.9 298.1 326.3L297.7 327.1Q297.2 326.8 296.7 326.6Q296.2 326.5 295.7 326.5Q295 326.5 294.6 326.7Q294.2 326.8 294.1 327.1Q293.9 327.3 293.9 327.7Q293.9 328.1 294.1 328.3Q294.4 328.5 294.8 328.7Q295.2 328.8 295.6 328.9Q296.1 329 296.6 329.2Q297.1 329.3 297.5 329.5Q297.9 329.8 298.1 330.1Q298.4 330.5 298.4 331.1Q298.4 331.6 298.1 332.1Q297.7 332.6 297.1 332.9Q296.5 333.2 295.5 333.2ZM305.6 333.1V326.6H303V325.7H309.2V326.6H306.6V333.1ZM314.5 333.1V325.7H317.4Q318.9 325.7 319.7 326.4Q320.5 327 320.5 328.3Q320.5 329.1 320.1 329.6Q319.8 330.2 319.1 330.5Q318.4 330.8 317.4 330.8H315.1L315.6 330.4V333.1ZM319.5 333.1 317.6 330.4H318.7L320.6 333.1ZM315.6 330.5 315.1 329.9H317.4Q318.4 329.9 318.9 329.5Q319.5 329.1 319.5 328.3Q319.5 327.5 318.9 327Q318.4 326.6 317.4 326.6H315.1L315.6 326.1ZM329.5 333.2Q328 333.2 327.2 332.3Q326.4 331.5 326.4 329.9V325.7H327.4V329.9Q327.4 331.1 328 331.7Q328.5 332.2 329.5 332.2Q330.5 332.2 331.1 331.7Q331.6 331.1 331.6 329.9V325.7H332.6V329.9Q332.6 331.5 331.8 332.3Q331 333.2 329.5 333.2ZM342.3 333.2Q341.5 333.2 340.8 332.9Q340.1 332.6 339.5 332.1Q339 331.6 338.7 330.9Q338.4 330.2 338.4 329.4Q338.4 328.6 338.7 327.9Q339 327.2 339.5 326.7Q340.1 326.2 340.8 325.9Q341.5 325.6 342.3 325.6Q343.2 325.6 343.9 325.9Q344.7 326.2 345.2 326.8L344.5 327.4Q344.1 327 343.5 326.8Q343 326.5 342.4 326.5Q341.8 326.5 341.2 326.8Q340.7 327 340.3 327.3Q339.9 327.7 339.7 328.3Q339.5 328.8 339.5 329.4Q339.5 330 339.7 330.5Q339.9 331.1 340.3 331.4Q340.7 331.8 341.2 332Q341.8 332.2 342.4 332.2Q343 332.2 343.5 332Q344.1 331.8 344.5 331.4L345.2 332Q344.7 332.6 343.9 332.9Q343.2 333.2 342.3 333.2ZM352.3 333.1V326.6H349.7V325.7H355.8V326.6H353.3V333.1ZM361.2 333.1V325.7H362.3V333.1ZM370.8 333.1 367.6 325.7H368.7L371.7 332.5H371.1L374.1 325.7H375.1L371.9 333.1ZM383.8 333.2Q382.9 333.2 382.2 332.9Q381.5 332.6 381 332.1Q380.4 331.6 380.1 330.9Q379.8 330.2 379.8 329.4Q379.8 328.6 380.1 327.9Q380.4 327.2 381 326.7Q381.5 326.2 382.2 325.9Q382.9 325.6 383.8 325.6Q384.6 325.6 385.3 325.9Q386.1 326.2 386.6 326.7Q387.1 327.2 387.4 327.9Q387.7 328.6 387.7 329.4Q387.7 330.2 387.4 330.9Q387.1 331.6 386.6 332.1Q386.1 332.6 385.3 332.9Q384.6 333.2 383.8 333.2ZM383.8 332.2Q384.4 332.2 384.9 332Q385.4 331.8 385.8 331.4Q386.2 331 386.4 330.5Q386.7 330 386.7 329.4Q386.7 328.8 386.4 328.3Q386.2 327.7 385.8 327.3Q385.4 327 384.9 326.8Q384.4 326.5 383.8 326.5Q383.2 326.5 382.6 326.8Q382.1 327 381.7 327.3Q381.3 327.7 381.1 328.3Q380.9 328.8 380.9 329.4Q380.9 330 381.1 330.5Q381.3 331 381.7 331.4Q382.1 331.8 382.6 332Q383.2 332.2 383.8 332.2Z"/></svg></div>
+      <div>
+        <p class="ftr-h">Procedimientos</p>
+        <ul><li><a href="../lipoescultura/">Lipoescultura y mommy makeover</a></li><li><a href="../aumento-de-busto/">Aumento y levantamiento de busto</a></li><li><a href="../botox-y-rellenos/">Bótox y rellenos</a></li></ul>
+      </div>
+      <div>
+        <p class="ftr-h">Consultorio</p>
+        <ul><li>Calle del Prado 208, Jardines del Moral, León, Gto.</li><li>Lunes a sábado, 9:30 a 12:30 · con cita</li><li><a class="js-wa" href="#" data-msg="Hola, Dr. García. Me gustaría información.">WhatsApp 477 765 3849</a></li><li><a href="mailto:drnestorgarciacirugiaplastica@gmail.com">drnestorgarciacirugiaplastica@gmail.com</a></li></ul>
+      </div>
+      <div>
+        <p class="ftr-h">Sígueme</p>
+        <ul><li><a href="https://www.instagram.com/dr.nestor_cirugiaplastica/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/profile.php?id=61572596087909" target="_blank" rel="noopener">Facebook</a></li><li><a href="../sobre-mi/">Sobre mí</a></li><li><a href="../preguntas-frecuentes/">Preguntas frecuentes</a></li><li class="mob-only"><a href="https://maps.app.goo.gl/Kqccn2uwh1JV8Kvp6" target="_blank" rel="noopener">Cómo llegar</a></li></ul>
+      </div>
+    </div>
+    <div class="ftr-legal">
+      <div>Dr. Néstor Misael García Herrera · Céd. Esp. 14718403 · CMCPER 2514 · UNAM<br>Aviso COFEPRIS No. 2511072002A00181</div>
+      <div><a href="../aviso-de-privacidad/">Aviso de privacidad</a> · <a href="../politica-de-cookies/">Política de cookies</a> · <button class="link-btn" type="button" onclick="Cookies.open()">Configurar cookies</button></div>
+      <div>© <span id="year">2026</span> · Sitio elaborado por <a href="https://gabrieljuarch.com" target="_blank" rel="noopener">Gabriel Juárez</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Botón flotante de WhatsApp (verde) -->
+<a class="wa js-wa" href="#" data-msg="Hola, Dr. García. Me gustaría información." aria-label="Escribir por WhatsApp" target="_blank" rel="noopener">
+  <span class="wa-tip">Escríbeme por WhatsApp</span>
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3C9 3 3.3 8.7 3.3 15.7c0 2.2.6 4.5 1.7 6.4L3.2 28.8l6.8-1.8a12.7 12.7 0 0 0 6 1.5h.01c7 0 12.7-5.7 12.7-12.7S23.1 3 16 3Zm0 23.4h-.01a10.6 10.6 0 0 1-5.4-1.5l-.39-.23-4.1 1.1 1.1-4-.25-.41a10.6 10.6 0 0 1-1.6-5.6c0-5.8 4.8-10.6 10.6-10.6 2.8 0 5.5 1.1 7.5 3.1a10.6 10.6 0 0 1 3.1 7.5c0 5.9-4.8 10.6-10.6 10.6Zm5.8-7.9c-.32-.16-1.9-.93-2.2-1-.29-.11-.5-.16-.71.2-.21.3-.82 1-1 1.2-.19.2-.37.2-.69.1-.32-.16-1.3-.5-2.6-1.6-.94-.84-1.6-1.9-1.8-2.2-.18-.32-.02-.49.1-.65.1-.14.3-.37.5-.56.2-.19.2-.32.3-.53.1-.21.1-.4-.03-.56-.08-.16-.71-1.7-.97-2.3-.26-.62-.52-.53-.71-.54h-.61c-.21 0-.56.1-.85.4-.29.3-1.1 1.1-1.1 2.6 0 1.6 1.1 3.1 1.3 3.3.16.2 2.2 3.4 5.4 4.8.8.33 1.4.52 1.8.67.8.24 1.4.21 2 .13.6-.09 1.9-.77 2.1-1.5.27-.74.3-1.4.19-1.5-.08-.13-.29-.21-.61-.37Z"/></svg>
+</a>
+
+<!-- Aviso de cookies -->
+<div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <b>Tu privacidad importa</b>
+  Este sitio usa cookies propias y de terceros (Google Analytics y píxel de Meta) para medir visitas y mejorar sus anuncios. Puedes aceptarlas o usar solo las necesarias. <a href="../politica-de-cookies/">Más información</a>.
+  <div class="c-btns"><button type="button" id="cAccept">Aceptar</button><button type="button" class="alt" id="cReject">Solo necesarias</button></div>
+</div>
+
+<!-- Plantilla del formulario (se inserta en cada .form-slot) -->
+<template id="tpl-form">
+  <div class="form-wrap">
+    <div>
+      <div class="kicker reveal">Agenda tu valoración</div>
+      <h2 class="h2 reveal d1 f-title"></h2>
+      <p class="lead reveal d2" style="margin-top:24px">Responde unas preguntas rápidas y te contactaré personalmente para resolver tus dudas y agendar tu cita.</p>
+      <p class="side-note reveal d3">¿Prefieres escribir directamente? <a class="js-wa" href="#" data-msg="Hola, Dr. García. Me gustaría agendar una valoración.">Envíame un WhatsApp</a></p>
+    </div>
+    <!-- Formulario de dForms (evalúa la calidad de cada contacto) -->
+    <iframe class="dform reveal d1" title="Formulario para agendar tu valoración" loading="lazy" data-src="FORM_URL"></iframe>
+  </div>
+</template>
+
+<script>
+/* ============================================================
+   CONFIGURACIÓN · editar aquí
+   ============================================================ */
+const CONFIG = {
+  // PENDIENTE: confirmar con el doctor si este será el número definitivo
+  WHATSAPP: '524777653849',
+  FORM_URL: 'https://app.dforms.ai/m4r8d4/f/dr-nestor-garcia-valoracion',   // formulario en dForms        // formato wa.me: 52 + número a 10 dígitos, sin "+" ni espacios
+  LOADER_MS: 2000,                 // duración de la pantalla de carga
+  GA4_ID: '',                      // PENDIENTE: ID de Google Analytics 4 (G-XXXXXXX)
+  META_PIXEL_ID: ''                // PENDIENTE: ID del píxel de Meta
+};
+
+/* ---------- Enlaces de WhatsApp (todos salen de CONFIG) ---------- */
+function waLink(msg){ return 'https://wa.me/' + CONFIG.WHATSAPP + (msg ? '?text=' + encodeURIComponent(msg) : ''); }
+function bindWA(root){
+  root.querySelectorAll('.js-wa').forEach(a => {
+    a.href = waLink(a.dataset.msg || '');
+    a.target = '_blank'; a.rel = 'noopener';
+    a.addEventListener('click', () => track('contact_whatsapp'));
+  });
+}
+
+/* ---------- Pantalla de carga (2 s) ---------- */
+function hideLoader(){
+  document.body.classList.remove('loading');
+  document.body.classList.add('loaded');
+  setTimeout(() => document.getElementById('loader')?.remove(), 700);
+}
+if (document.body.classList.contains('loaded')) hideLoader();
+else window.addEventListener('load', () => {
+  try { sessionStorage.setItem('ng_intro', '1'); } catch(e){}
+  setTimeout(hideLoader, CONFIG.LOADER_MS);
+});
+
+/* ---------- Animaciones al hacer scroll ---------- */
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add('in');
+    if (e.target.dataset.count) countUp(e.target);
+    e.target.querySelectorAll?.('[data-count]').forEach(countUp);
+    io.unobserve(e.target);
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+function observe(root){ root.querySelectorAll('.reveal, .steps').forEach(el => { el.classList.remove('in'); io.observe(el); }); }
+
+/* Contador sutil para los datos clave */
+function countUp(el){
+  if (el.dataset.done) return; el.dataset.done = 1;
+  const end = +el.dataset.count, t0 = performance.now(), dur = 1400;
+  const tick = t => { const p = Math.min((t - t0) / dur, 1); el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(tick); };
+  requestAnimationFrame(tick);
+}
+
+/* ---------- Formularios (dForms) ---------- */
+function buildForms(root){
+  const tpl = document.getElementById('tpl-form');
+  root.querySelectorAll('.form-slot:not(.ready)').forEach(slot => {
+    slot.appendChild(tpl.content.cloneNode(true));
+    slot.classList.add('ready');
+    slot.querySelector('.f-title').textContent = slot.dataset.title || 'Agenda tu valoración';
+    slot.querySelector('.dform').src = CONFIG.FORM_URL;
+    bindWA(slot);
+  });
+}
+
+/* ---------- Página actual ---------- */
+function initPage(){ buildForms(document); observe(document); }
+
+/* ---------- Encabezado y menú móvil ---------- */
+const hdr = document.getElementById('hdr');
+addEventListener('scroll', () => hdr.classList.toggle('solid', scrollY > 40), { passive: true });
+const burger = document.getElementById('burger');
+burger.addEventListener('click', () => {
+  const open = document.body.classList.toggle('menu-open');
+  burger.setAttribute('aria-expanded', open);
+});
+document.querySelectorAll('#nav a').forEach(a => a.addEventListener('click', () => {
+  document.body.classList.remove('menu-open');
+  burger.setAttribute('aria-expanded', 'false');
+}));
+
+/* ---------- Reseñas rotativas ---------- */
+(function(){
+  const revs = [...document.querySelectorAll('#revStage .rev')], dots = document.getElementById('revDots');
+  if (!revs.length) return; let i = 0;
+  revs.forEach((_, n) => { const b = document.createElement('button'); b.setAttribute('aria-label', 'Opinión ' + (n + 1)); b.onclick = () => show(n); dots.appendChild(b); });
+  function show(n){ i = n; revs.forEach((r, k) => r.classList.toggle('on', k === n)); [...dots.children].forEach((d, k) => d.classList.toggle('on', k === n)); }
+  show(0); setInterval(() => show((i + 1) % revs.length), 6500);
+})();
+
+/* ============================================================
+   COOKIES + MEDICIÓN (Google Analytics y píxel de Meta)
+   Solo se cargan si la persona acepta.
+   ============================================================ */
+const Cookies = {
+  key: 'ng_cookies',
+  get(){ try { return localStorage.getItem(this.key); } catch(e){ return null; } },
+  set(v){ try { localStorage.setItem(this.key, v); } catch(e){} },
+  open(){ document.getElementById('cookies').classList.add('on'); },
+  close(){ document.getElementById('cookies').classList.remove('on'); },
+  init(){
+    const v = this.get();
+    if (v === 'all') loadTracking(); else if (!v) setTimeout(() => this.open(), CONFIG.LOADER_MS + 1200);
+    document.getElementById('cAccept').onclick = () => { this.set('all'); this.close(); loadTracking(); };
+    document.getElementById('cReject').onclick = () => { this.set('necessary'); this.close(); };
+  }
+};
+let trackingOn = false;
+function loadTracking(){
+  if (trackingOn) return; trackingOn = true;
+  if (CONFIG.GA4_ID) {                       // Google Analytics 4
+    const s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + CONFIG.GA4_ID; document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || []; window.gtag = function(){ dataLayer.push(arguments); };
+    gtag('js', new Date()); gtag('config', CONFIG.GA4_ID, { send_page_view: false });
+  }
+  if (CONFIG.META_PIXEL_ID) {                // Píxel de Meta
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', CONFIG.META_PIXEL_ID);
+  }
+  track('page_view', { page_title: document.title, page_location: location.href });
+}
+/* Eventos: page_view, contact_whatsapp (clic a WhatsApp) y generate_lead (formulario) */
+function track(event, params = {}){
+  if (!trackingOn) return;
+  if (window.gtag) gtag('event', event, params);
+  if (window.fbq) {
+    if (event === 'generate_lead') fbq('track', 'Lead', params);
+    else if (event === 'contact_whatsapp') fbq('track', 'Contact');
+    else if (event === 'page_view') fbq('track', 'PageView');
+  }
+}
+
+/* ---------- Arranque ---------- */
+document.getElementById('year').textContent = new Date().getFullYear();
+bindWA(document);
+Cookies.init();
+initPage();
+</script>
+</body>
+</html>

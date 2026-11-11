@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_fuente/
+
+Sitemap: https://drnestorgarciaplastico.com/sitemap.xml

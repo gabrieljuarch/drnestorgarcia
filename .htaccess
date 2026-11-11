@@ -1,0 +1,29 @@
+# Servidor Hostinger (Apache/LiteSpeed)
+Options -Indexes
+RewriteEngine On
+
+# Forzar HTTPS y versión sin www (versión canónica: https://drnestorgarciaplastico.com)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://drnestorgarciaplastico.com/$1 [L,R=301]
+
+# Archivos de trabajo que no deben verse en internet
+RewriteRule ^(_fuente|\.git)(/|$) - [F,L]
+
+# Página de error personalizada
+ErrorDocument 404 /404.html
+
+# Compresión
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain application/javascript application/json application/xml image/svg+xml
+</IfModule>
+
+# Caché del navegador (las fotos cambian de nombre cuando se reemplazan)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType text/html "access plus 0 seconds"
+</IfModule>
