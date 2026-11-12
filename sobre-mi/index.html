@@ -289,6 +289,8 @@ body.loading{overflow:hidden}
 .form-ok{display:none;grid-column:1/-1;border-left:3px solid var(--naranja);padding:18px 22px;background:var(--arena)}
 .form-ok.on{display:block}
 .form-ok b{font-family:var(--f-titulo);font-weight:400;font-size:24px;display:block;margin-bottom:6px}
+.form-legal{margin-top:22px;font-size:13.5px;line-height:1.6;color:var(--piedra)}
+.form-legal a{color:var(--carbon);border-bottom:1px solid var(--naranja)}
 .side-note{margin-top:34px;padding-top:26px;border-top:1px solid var(--linea);font-size:15.5px;color:var(--piedra)}
 .side-note a{color:var(--carbon);border-bottom:1px solid var(--naranja)}
 
@@ -372,6 +374,9 @@ body.loading{overflow:hidden}
 .legal{max-width:820px}
 .legal h2{font-size:28px;margin:46px 0 14px}
 .legal p,.legal li{color:#3E3833}
+.legal h3{font-family:var(--f-etiqueta);font-size:12px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:var(--naranja-prof);margin:30px 0 6px}
+.legal ul{padding-left:20px;margin:10px 0 18px}
+.legal li{margin-bottom:8px}
 .legal .draft{font-family:var(--f-etiqueta);font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--naranja-prof);border:1px solid var(--naranja);padding:8px 12px;display:inline-block;margin-bottom:24px}
 
 /* ============================================================
@@ -608,7 +613,7 @@ body.loading{overflow:hidden}
 <!-- Aviso de cookies -->
 <div class="cookies" id="cookies" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
   <b>Tu privacidad importa</b>
-  Este sitio usa cookies propias y de terceros (Google Analytics y píxel de Meta) para medir visitas y mejorar sus anuncios. Puedes aceptarlas o usar solo las necesarias. <a href="../politica-de-cookies/">Más información</a>.
+  Este sitio usa cookies propias y de terceros (Google Analytics y píxel de Meta) para medir visitas y mejorar sus anuncios. Puedes aceptarlas o usar solo las necesarias. <a href="../politica-de-cookies/">Política de cookies</a> · <a href="../aviso-de-privacidad/">Aviso de privacidad</a>.
   <div class="c-btns"><button type="button" id="cAccept">Aceptar</button><button type="button" class="alt" id="cReject">Solo necesarias</button></div>
 </div>
 
@@ -619,6 +624,7 @@ body.loading{overflow:hidden}
       <div class="kicker reveal">Agenda tu valoración</div>
       <h2 class="h2 reveal d1 f-title"></h2>
       <p class="lead reveal d2" style="margin-top:24px">Responde unas preguntas rápidas y te contactaré personalmente para resolver tus dudas y agendar tu cita.</p>
+      <p class="form-legal reveal d3">Al enviar el formulario aceptas el <a href="../aviso-de-privacidad/">Aviso de privacidad</a> y otorgas tu consentimiento expreso para el tratamiento de tus datos, incluido el procedimiento de tu interés, con el fin de contactarte y agendar tu valoración.</p>
       <p class="side-note reveal d3">¿Prefieres escribir directamente? <a class="js-wa" href="#" data-msg="Hola, Dr. García. Me gustaría agendar una valoración.">Envíame un WhatsApp</a></p>
     </div>
     <!-- Formulario de dForms (evalúa la calidad de cada contacto) -->
