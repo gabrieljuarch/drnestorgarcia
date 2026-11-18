@@ -144,7 +144,7 @@ MEDICO = {
         "opens": "09:30", "closes": "12:30"
     }],
     "areaServed": {"@type": "City", "name": "León, Guanajuato"},
-    "paymentAccepted": "Efectivo, transferencia, tarjeta de crédito",
+    "paymentAccepted": "Efectivo, transferencia",
     "sameAs": [
         "https://www.instagram.com/dr.nestor_cirugiaplastica/",
         "https://www.facebook.com/profile.php?id=61572596087909"
