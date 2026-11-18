@@ -675,7 +675,7 @@ const CONFIG = {
   WHATSAPP: '524777653849',
   FORM_URL: 'https://app.dforms.ai/m4r8d4/f/dr-nestor-garcia-valoracion',   // formulario en dForms        // formato wa.me: 52 + número a 10 dígitos, sin "+" ni espacios
   LOADER_MS: 2000,                 // duración de la pantalla de carga
-  GA4_ID: '',                      // PENDIENTE: ID de Google Analytics 4 (G-XXXXXXX)
+  GA4_ID: 'G-J0M16RBJ8K',          // Google Analytics 4
   META_PIXEL_ID: ''                // PENDIENTE: ID del píxel de Meta
 };
 
@@ -789,16 +789,23 @@ function loadTracking(){
   }
   track('page_view', { page_title: document.title, page_location: location.href });
 }
-/* Eventos: page_view, contact_whatsapp (clic a WhatsApp) y generate_lead (formulario) */
+/* Eventos: page_view, contact_whatsapp (clic a WhatsApp) y form_start (empieza a llenar el formulario) */
 function track(event, params = {}){
   if (!trackingOn) return;
   if (window.gtag) gtag('event', event, params);
   if (window.fbq) {
     if (event === 'generate_lead') fbq('track', 'Lead', params);
-    else if (event === 'contact_whatsapp') fbq('track', 'Contact');
+    else if (event === 'contact_whatsapp' || event === 'form_start') fbq('track', 'Contact');
     else if (event === 'page_view') fbq('track', 'PageView');
   }
 }
+
+/* Formulario: cuenta cuando alguien empieza a llenarlo (el iframe de dForms recibe el foco) */
+let formStarted = false;
+window.addEventListener('blur', () => {
+  const el = document.activeElement;
+  if (!formStarted && el && el.classList && el.classList.contains('dform')) { formStarted = true; track('form_start'); }
+});
 
 /* ---------- Arranque ---------- */
 document.getElementById('year').textContent = new Date().getFullYear();
